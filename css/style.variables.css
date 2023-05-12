@@ -1,0 +1,52 @@
+:root{
+    --emerald-color : #145A6C;
+    --orange-color : #F26448;
+    --earth-color : #F2EAE6;
+    --leaf-color : #05665F;
+    --yellow-color : #FFD27A;
+    --green-color : #26B994;
+    --blue-color : #C0E1EB;
+
+    --bg1 : #FFFFFF;
+    --bg2 : #F7F7F5;
+    --bg3 :  #F2F2F0;
+    --bg4 : #EBEBE8;
+    --bg5 : #DEDDDB;
+
+    --divider : var(--bg4);
+    --border : var(--bg5);
+
+    --text-main : #1C1A17;
+    --text-secondary : #6C6C6C;
+
+    --display-large : 72px;
+    --display-medium : 56px;
+
+    --heading-large : 44px;
+    --heading-medium : 32px;
+
+    --title-large : 28px;
+    --title-medium : 24px;
+
+    --text-large: 22px;
+    --text-standard : 18px;
+    --text-small : 16px;
+
+
+    --margin-xlarge : 160px;
+    --margin-large : 80px;
+    --margin-medium : 40px;
+    --margin-small : 20px;
+
+    --padding-large: 48px;
+    --padding-medium: 32px;
+    --padding-small: 20px;
+
+}
+/* Works for Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+

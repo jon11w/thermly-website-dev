@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- mobile metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <!-- site metas -->
     <title>Thermly</title>
     <meta name="keywords" content="">
@@ -16,6 +15,9 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- style css -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.variables.css">
+    <link rel="stylesheet" href="css/globalFonts.css">
+    <link rel="stylesheet" href="css/globalColours.css">
     <!-- Responsive-->
     <link rel="stylesheet" href="css/responsive.css">
     <!-- fevicon -->
@@ -24,337 +26,234 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
     <link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
 </head>
 <!-- body -->
 <body class="main-layout">
-<!-- loader  -->
-<div class="loader_bg">
-    <div class="loader"><img src="images/loading.gif" alt="#"/></div>
-</div>
-<!-- end loader -->
-<div class="full_bg">
-    <!-- header -->
+
     <header class="header-area">
-            <div class="row d_flex">
-                <div class=" col-md-3 col-sm-3">
-                    <div class="logo">
-                        <img src="icon/ThermlyLogotypeOrange.svg" width="200px"/>
-                    </div>
-                </div>
-                <div class="col-md-9 col-sm-9">
-                    <div class="navbar-area">
-                        <nav class="site-navbar">
-                            <ul>
-                                <li><a class="active" href="index.html">Home</a></li>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="service.html">Service</a></li>
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="contact.html">Sign in</a></li>
-
-                            </ul>
-                            <a class="read_more nav_button" href="https://thermly-fe.vercel.app/heatpump-readiness">Create Account</a>
-                            <button class="nav-toggler">
-                                <span></span>
-                            </button>
-                        </nav>
-                    </div>
+        <div class="row full_bg">
+            <div class="col-md-3 col-sm3 full_bg">
+                <div class="logo full_bg">
+                    <img class="logo-image" src="icon/ThermlyLogotypeOrange.svg"/>
+                    <span class="logo-tm">TM</span>
                 </div>
             </div>
+            <nav class="col-md-9 col-sm-9 site-navbar">
+                    <ul>
+                        <li><a class="active" href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="blog.html">Installers</a></li>
+                        <li><a href="contact.html">Sign in</a></li>
+
+                    </ul>
+                    <a class="read_more nav_button" href="Javascript:void(0)">Get started</a>
+            </nav>
+            <button class="nav-toggler">
+                <i class="nav-burger fa fa-bars"></i>
+            </button>
+        </div>
     </header>
-    <!-- end header inner -->
 
-    <!-- top -->
-    <div class="slider_main">
+    <main class="main">
+
+        <!-- header -->
+        <div class="slider_main">
             <!-- first slide -->
-
-            <div class="container">
-                <div class="row d_flex">
-                    <div class="col-md-7">
-                        <div class="creative">
-                            <h1>Headline introduction <br>Across two lines </h1>
-                            <p>commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint</p>
-                            <a class="read_more" href="https://thermly-fe.vercel.app/heatpump-readiness">Free heat pump estimate</a>
-
-                        </div>
-                    </div>
-                    <div class="col-md-5">
-
-
-                            <div class="agency">
-                                <figure><img src="images/heading.svg" height="200px"/></figure>
+            <div class="container flex-center">
+                <div class="header-content">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="header-text">
+                                <div class="display-large emerald">Welcome to Thermly</div>
+                                <div class="heading-medium">We're delighted you've arrived</div>
+                                <p class="text-small">We’re here to help people make informed decisions about making home improvements that impact on your use of energy. Why? Well, it’s not getting any cheaper, is it? It’s also high time we did things without as much impact on the climate. </p>
                             </div>
-
-                    </div>
-                </div>
-
-            </div>
-    </div>
-    <!-- end banner -->
-
-    <!-- services -->
-    <div class="services">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div  class="services_box text_align_center">
-                        <h3>Reduce your energy bills</h3>
-                        <div class="services_img">
-                            <figure><img src="images/energy.jpg" alt="#"/></figure>
                         </div>
-
-                        <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
-<!--                        <a class="read_more" href="service.html">Read More</a>-->
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div  class="services_box text_align_center">
-                        <h3>Heat and cool your home</h3>
-                        <div class="services_img">
-                        <figure><img src="images/heating.png" alt="#"/></figure>
+                        <div class="col-md-6">
+                            <div class="img flex-center header-img full_bg">
+                                <img src="images/heading.svg" />
+                            </div>
                         </div>
-                        <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                    </div>
+                    <div class="row header-button-row">
+                        <a class="read_more" href="Javascript:void(0)">Get started</a>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div  class="services_box text_align_center">
-                        <h3>Another nice thing here</h3>
-                        <div class="services_img">
-                        <figure><img src="images/green.png" alt="#"/></figure>
-                        </div>
-                        <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
 
-                    </div>
-                </div>
             </div>
         </div>
-    </div>
-    <!-- end services -->
-<hr/>
-    <!-- about -->
-    <div class="about">
-        <div class="container_width">
-            <div class="row d_flex grig">
+        <!-- end header -->
+
+        <!-- services -->
+        <div id="services" class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div  class="services_box margin-top-30 text_align_center">
+                        <h3>Save money</h3>
+                        <div class="img flex-center">
+                            <img src="images/energy.jpg" alt="#"/>
+                        </div>
+                        <p class="text-small">Maybe, maybe not. We’re just being honest. It all depends on you really.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div  class="services_box margin-top-30 text_align_center">
+                        <h3>Reduce carbon</h3>
+                        <div class="img flex-center">
+                            <img src="images/heating.png" alt="#"/>
+                        </div>
+                        <p class="text-small">Again, depends what you do to your home, and then how you use it. This honesty thing isn’t great on a front page, is it? But bear with us and read on!</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div  class="services_box margin-top-30 text_align_center">
+                        <h3>Do the right thing</h3>
+                        <div class="img flex-center">
+                            <img src="images/green.png" alt="#"/>
+                        </div>
+                        <p class="text-small">Bingo. Definitely achievable. Thermly will help you make the right decision, and then help make it happen, which may even make you happy. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row flex-center">
+                <a class="read_more" href="Javascript:void(0)">Get started</a>
+            </div>
+        </div>
+        <!-- end services -->
+        <hr/>
+
+        <!-- benefits -->
+        <div id="benefits" class="container">
+            <div class="row">
                 <div class="col-md-6 order">
-                    <div class="titlepage text_align_left">
-                        <h2>Introduce benefits</h2>
-                        <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquipsed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip</p>
-                        <ul>
-                            <li><a href="index.html">Save your energy bills</a></li>
-                            <li><a href="about.html">Heating and cooling</a></li>
-                            <li><a href="service.html">Environment friendly</a></li>
+                    <div class="text_align_left">
+                        <div class="display-medium orange">Why use Thermly?</div>
+                        <ul class="margin-top-30">
+                            <li class="title-medium emerald">It's smart</li>
+                            <p class="text-small benefits-para">We use lots of data (we know, yawn) and some clever analytics to help you make the right decision, quickly.</p>
+                            <li class="title-medium emerald">It's quick</li>
+                            <p class="text-small benefits-para">We said that already, but it is. Very quick. And intuitive. And easy to use. Which hopefully makes quite a tedious exercise that much more enjoyable.</p>
+                            <li class="title-medium emerald">It’s independent</li>
+                            <p class="text-small benefits-para">We aren’t linked to any particular manufacturer of equipment, or installation contractor. And we like it that way, because you then get impartial advice.</p>
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="about_img">
-                        <figure><img src="images/advantages.svg" alt="#" width="500px"/>
-                        </figure>
+                    <div class="img full_bg flex-center">
+                        <img src="images/advantages.svg" alt="#" />
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- end about -->
-    <hr/>
-    <!-- working -->
-    <div class="about">
-        <div class="container_width">
-            <div class="row d_flex grid">
-                <div class="col-md-8 order">
-                    <div class="how-it-work text_align_left">
-                        <h2>How it works at a glance</h2>
-                        <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <!-- end benefits -->
+        <hr/>
+
+        <!-- working -->
+        <div id="working" class="container block">
+            <div class="row full-width flex-center">
+                <div class="col-md-6 order">
+                    <div class="how-it-works text_align_left">
+                        <h2 class="display-medium">How it works</h2>
+                        <p class="text-standard">Three, alarmingly simple, steps.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <div class="question-card">
-                        <p>Questions? No problem</p>
-                        <p>Check out our FAQs </p>
+                        <p class="text-small">Questions? No problem</p>
+                        <p class="text-small">Check out our FAQs </p>
 
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4">
-                    <div  class="how-it-work-box step1 text_align_left">
-                        <p>Step 1. Estimate</p>
-                        <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <!--                        <a class="read_more" href="service.html">Read More</a>-->
+                <div class="col-lg-4">
+                    <div  class="how-it-works-box step1 text_align_left">
+                        <p class="text-standard">Step 1 – Get Ready</p>
+                        <p class="text-small">Answer a bunch of super simple questions – using up about 3 minutes of your day – to understand if your home is ready for a heat pump. If it is, we’ll give you some useful info to see if you want to keep going.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div  class="how-it-work-box step2 text_align_left">
-                        <p>Step 1. Estimate</p>
-                        <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <!--                        <a class="read_more" href="service.html">Read More</a>-->
+                <div class="col-lg-4">
+                    <div  class="how-it-works-box step2 text_align_left">
+                        <p class="text-standard">Step 2 – Get Steady</p>
+                        <p class="text-small">Or rather, make sure you’re sure. Go into more detail – whilst in the comfort of your own home – and provide some further details to make things more accurate. Add: 30 minutes. 40 if you’re drinking tea at the same time.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div  class="how-it-work-box step3 text_align_left">
-                        <p>Step 1. Estimate</p>
-                        <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <!--                        <a class="read_more" href="service.html">Read More</a>-->
+                <div class="col-lg-4">
+                    <div  class="how-it-works-box step3 text_align_left">
+                        <p class="text-standard">Step 3 – Go!</p>
+                        <p class="text-small">Get a home survey. Get a final price from local trusted and capable contractors. Access the required finance, if you need it. Sign on the dotted line – only if you’re still happy. Press on with whatever it is you’ve decided to do. Marvellous.</p>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-4 how-it-work-button" >
-                    <a class="read_more" href="https://thermly-fe.vercel.app/heatpump-readiness">Free heat pump estimate</a>
-                </div>
-                <div class="col-md-2 how-it-work-button">
-                    <a class="link" href="index.html">Find out more</a>
-                </div>
+            <div class="row flex-center margin-top-30">
+                <a class="read_more" href="Javascript:void(0)">Get started</a>
             </div>
         </div>
-    </div>
-    <!-- working about -->
-    <hr/>
+        <!-- end working -->
+        <hr/>
 
-    <!-- customers -->
-    <div class="customers">
-        <div class="clients_bg">
-            <div class="container">
+        <!-- Get started -->
+        <div id="benefits" class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="img full_bg flex-center">
+                        <img src="images/advantages.svg" alt="#" />
+                    </div>
+                </div>
+                <div class="col-md-6 order">
+                    <div class="text_align_left">
+                        <div class="display-medium orange">Sound good? Jump in.</div>
+                        <ul class="margin-top-30">
+                            <li class="title-medium emerald">Get started</li>
+                            <p class="text-small benefits-para">Take our heat pump readiness assessment - it only takes five minutes (we told you it's quick!).</p>
+                            <li class="title-medium emerald">No personal information</li>
+                            <p class="text-small benefits-para">Other than your address, we don't need any personal information from you. We won't be pestering your with emails and phone calls.</p>
+                            <li class="title-medium emerald">Create account</li>
+                            <p class="text-small benefits-para">Once you're ready to dig a little deeper, create and account and start getting connected to installers.</p>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row flex-center">
+                <a class="read_more" href="Javascript:void(0)">Get started</a>
+            </div>
+        </div>
+        <!-- end get started -->
+    </main>
+    
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="col-md-7">
+                <div class="row footer-logo">
+                    <img src="icon/ThermlyLogotypeWhite.svg" width="200px" />
+                </div>
                 <div class="row">
-                    <div class="col-sm-12">
-                        <div class="titlepage text_align_center">
-                            <h2>What is Says Customers</h2>
-                        </div>
+                    <div class="hedingh3 text_align_left">
+                        <p class="text-small"> @ All rights reserved. Thermly 2023</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="row">
+                    <div>
+                        <ul class="menu_footer">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="service.html">Service</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact us</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- start slider section -->
-        <div id="myCarousel" class="carousel slide clients_banner" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="container">
-                        <div class="carousel-caption relative">
-                            <div class="row d_flex">
-                                <div class="col-md-2 col-sm-8">
-                                    <div class="pro_file">
-                                        <i><img src="images/test2.png" alt="#"/></i>
-                                        <h4>English.Many</h4>
-                                        <span>normal distribution</span>
-                                    </div>
-                                </div>
-                                <div class="col-md-10">
-                                    <div class="test_box text_align_left">
-                                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has
-                                            roots in a piece of classical Latin literature from 45 BC, making it over
-                                            2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney
-                                            College in Virginia, looked up one of the more obscure Latin words,
-                                            consectetur, from a Lorem Ipsum passage, and going </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="container">
-                        <div class="carousel-caption relative">
-                            <div class="row d_flex">
-                                <div class="col-md-2 col-sm-8">
-                                    <div class="pro_file">
-                                        <i><img src="images/test2.png" alt="#"/></i>
-                                        <h4>English.Many</h4>
-                                        <span>normal distribution</span>
-                                    </div>
-                                </div>
-                                <div class="col-md-10">
-                                    <div class="test_box text_align_left">
-                                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has
-                                            roots in a piece of classical Latin literature from 45 BC, making it over
-                                            2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney
-                                            College in Virginia, looked up one of the more obscure Latin words,
-                                            consectetur, from a Lorem Ipsum passage, and going </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="container">
-                        <div class="carousel-caption relative">
-                            <div class="row d_flex">
-                                <div class="col-md-2 col-sm-8">
-                                    <div class="pro_file">
-                                        <i><img src="images/test2.png" alt="#"/></i>
-                                        <h4>English.Many</h4>
-                                        <span>normal distribution</span>
-                                    </div>
-                                </div>
-                                <div class="col-md-10">
-                                    <div class="test_box text_align_left">
-                                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has
-                                            roots in a piece of classical Latin literature from 45 BC, making it over
-                                            2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney
-                                            College in Virginia, looked up one of the more obscure Latin words,
-                                            consectetur, from a Lorem Ipsum passage, and going </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                <i class="fa fa-angle-left" aria-hidden="true"></i>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-    </div>
-    <!-- end customers -->
-    <!--  footer -->
-        <div class="footer">
-            <div class="container footer-content">
-                    <div class="col-md-7">
-                        <div class="row footer-logo">
-                            <img src="icon/ThermlyLogotypeWhite.svg" width="200px" />
-
-                        </div>
-                        <div class="row">
-                            <div class="hedingh3 text_align_left">
-                                <p> @ All rights reserved. Thermly 2023</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-5">
-                        <div class="row">
-                            <div >
-                                    <ul class="menu_footer">
-                                        <li><a href="index.html">Home</a></li>
-                                        <li><a href="about.html">About</a></li>
-                                        <li><a href="service.html">Service</a></li>
-                                        <li><a href="blog.html">Blog</a></li>
-                                        <li><a href="contact.html">Contact us</a></li>
-                                    </ul>
-                            </div>
-                        </div>
-                    </div>
-            </div>
-        </div>
-    <!-- end footer -->
+    </footer>
+    
     <!-- Javascript files-->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>

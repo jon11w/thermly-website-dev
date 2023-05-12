@@ -1,0 +1,173 @@
+.display-large {
+    font-family: 'Sofia Pro Soft Medium';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 80px;
+    letter-spacing: -0.04em;
+}
+
+.display-medium {
+    font-family: 'Sofia Pro Soft Medium';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: -0.04em;
+}
+
+.heading-large {
+    font-family: 'Sofia Pro Soft Medium';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 52px;
+    letter-spacing: -0.02em;
+}
+
+.heading-medium {
+    font-family: 'Sofia Pro Soft Medium';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+}
+
+.title-large {
+    font-family: 'Sofia Pro Medium';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: -0.02em;
+}
+
+.title-medium {
+    font-family: 'Sofia Pro Medium';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+}
+
+.text-large {
+    font-family: 'Sofia Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.text-standard {
+    font-family: 'Sofia Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.text-small {
+    font-family: 'Sofia Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.emerald-font{
+    color: var(--emerald-color)
+}
+.orange-font{
+    color: var(--orange-color)
+}
+.white-font{
+    color: var(--bg1)
+}
+.black-font{
+    color: var(--text-main)
+}
+.grey-font{
+    color: var(--text-secondary)
+}
+
+
+@media screen and (max-width: 575px) {
+
+    .display-large {
+        font-family: 'Sofia Pro Soft';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 44px;
+        letter-spacing: -0.02em;
+    }
+
+    .display-medium {
+        font-family: 'Sofia Pro Soft';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 40px;
+        letter-spacing: -0.02em;
+    }
+
+    .heading-large {
+        font-family: 'Sofia Pro Soft';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 38px;
+        letter-spacing: -0.02em;
+    }
+
+    .heading-medium {
+        font-family: 'Sofia Pro Soft';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 36px;
+        letter-spacing: -0.02em;
+    }
+
+    .title-large {
+        font-family: 'Sofia Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .title-medium {
+        font-family: 'Sofia Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .text-large {
+        font-family: 'Sofia Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .text-standard {
+        font-family: 'Sofia Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .text-small {
+        font-family: 'Sofia Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+    }
+}

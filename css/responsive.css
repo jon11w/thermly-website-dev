@@ -2,61 +2,25 @@
 File Name: responsive.css 
 ---------------------------------------------------------------------*/
 
-@media (min-width: 1343px) and (max-width: 1500px) {
-    .full_bg {
-        height: 100%;
-    }
-    #banner1 .carousel-control-next {
-        right: 43.7%;
-    }
-    #myCarousel .carousel-control-next {
-        right: 43.7%;
-    }
-}
 
-@media (min-width: 1200px) and (max-width: 1342px) {
-    .slider_main {
-        margin: 40px;
-    }
-    .footer {
-        margin: 40px;
-    }
-    .about {
-        margin: 0 40px;
-    }
-    .full_bg {
-        height: 100%;
-    }
-    #banner1 .carousel-control-next {
-        right: 42.1%;
-    }
-    #myCarousel .carousel-control-next {
-        right: 42.1%;
+@media (min-width: 1200px)  {
+    .logo-image {
+        max-width: 200px;
     }
 }
 
 
 @media (min-width: 992px) and (max-width: 1199px) {
-    .slider_main {
-        margin: 30px;
-    }
-    .footer {
-        margin: 30px;
-    }
-    .about {
-        margin: 0 30px;
-    }
-    .full_bg {
-        height: 100%;
+    .logo-image {
+        max-width: 200px;
     }
     .site-navbar ul li {
-        padding-right: 57px;
+        padding-right: 30px;
     }
     .mar_right {
         margin-right: 0;
     }
-    .creative .read_more {
-
+    .header-text .read_more {
         margin-right: 0;
     }
     #banner1 .carousel-control-next {
@@ -68,32 +32,17 @@ File Name: responsive.css
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .slider_main {
-        margin: 20px;
-    }
-    .footer {
-        margin: 20px;
-    }
-    .about {
-        margin: 0 20px;
-    }
-    .full_bg {
-        height: 100%;
-    }
+
     .site-navbar ul li {
-        padding-right: 31px;
+        padding-right: 30px;
     }
     .mar_right {
         margin-right: 0;
     }
-    .creative h1 {
-        font-size: 56px;
-        line-height: 70px;
-    }
-    .creative p {
+    .header-text p {
         padding: 5px 0 15px 0;
     }
-    .creative .read_more {
+    .header-text .read_more {
         margin-right: 0;
     }
 
@@ -116,19 +65,22 @@ File Name: responsive.css
         font-size: 37px;
         line-height: 45px;
     }
-    .how-it-work h2{
+    .how-it-works h2{
         font-size: 37px;
         line-height: 45px;
     }
-    .how-it-work-button {
+    .how-it-works-button {
        justify-content: center;
     }
 
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
-    .slider_main{
-        margin: 15px;
+
+    header,
+    main,
+    footer {
+        width: calc(100vw - 40px);
     }
     .nav_button{
         display: none;
@@ -149,19 +101,45 @@ File Name: responsive.css
         order: -1;
     }
     .question-card {
-        margin-top: 90px;
+        margin-top: 20px;
     }
     .mar_right {
         margin-right: 0px;
     }
     .services_box figure {
-        width: 300px;
+        width: 100%;
         display: flex;
         align-items: center;
     }
-    .about_img,
-    .agency {
-        margin-top: 30px;
+    
+
+    .header-area {
+        height: 8vh;
+        padding: 10px 0;
+        margin: 0 30px;
+        width: calc(100vw - 70px);
+    }
+    .slider_main {
+        height: 90vh;
+        margin-bottom: 0 15px 2vh 15px;
+    }
+    .logo-image {
+        height: 100%;
+        width: auto;
+    }
+    .header-text {
+        text-align: center;
+    }
+    .header-text p {
+        display: none;
+    }
+    .header-img{
+        width: auto;
+        height:fit-content;
+    }
+    .header-button-row {
+        justify-content: center;
+        padding: 10px 0;
     }
     #banner1 .carousel-control-prev,
     #banner1 .carousel-control-next {
@@ -187,11 +165,11 @@ File Name: responsive.css
         font-size: 34px;
         line-height: 40px;
     }
-    .how-it-work h2{
+    .how-it-works h2{
         font-size: 34px;
         line-height: 40px;
     }
-    .how-it-work-button {
+    .how-it-works-button {
         justify-content: center;
     }
     .pro_file span {
@@ -213,17 +191,17 @@ File Name: responsive.css
     .nav-toggler {
         display: block;
         position: absolute;
-        right: 15px;
+        right: 20px;
         z-index: 99999;
     }
     .site-navbar {
-        min-height: 60px;
+        max-height: 0;
     }
     .site-navbar ul {
         position: absolute;
-        width: 100%;
-        left: -15px;
-        top: 60px;
+        width: 75%;
+        right: 0px;
+        top: 30px;
         flex-direction: column;
         align-items: center;
         background-color: #fff;
@@ -257,8 +235,12 @@ File Name: responsive.css
         display: none;
     }
     .slider_main {
-        padding: 50px 0 80px 0;
-        margin: 10px;
+        padding: 0;
+    }
+    header,
+    main,
+    footer {
+        width: calc(100vw - 40px);
     }
     .footer {
         margin: 10px;
@@ -270,29 +252,37 @@ File Name: responsive.css
         text-align: left;
     }
     .question-card {
-        margin-top: 90px;
-    }
-    .about_img,
-    .agency {
-        margin-top: 30px;
-        display: none;
-    }
-    .creative h1 {
-        font-size: 40px;
-        line-height: 44px;
-        letter-spacing: -0.02em;
+        margin-top: 20px;
     }
 
-    .creative p {
-        font-size: 18px;
-        line-height: 26px;
+    .header-area {
+        height: 8vh;
+        padding: 10px 0;
     }
-    .creative .read_more {
-        margin-bottom: 5px;
-        margin-right: 0;
+    .slider_main {
+        height: 90vh;
+        margin-bottom: 2vh;
+    }
+    .logo-image {
+        height: 100%;
+        width: auto;
+    }
+    .header-text {
+        text-align: center;
+    }
+    .header-text p {
+        display: none;
+    }
+    .header-img{
+        width: auto;
+        height:fit-content;
+    }
+    .header-button-row {
+        justify-content: center;
+        padding: 10px 0;
     }
     .services_box figure {
-        width: 200px;
+        width: 100%;
         display: flex;
         align-items: center;
     }
@@ -323,11 +313,11 @@ File Name: responsive.css
         font-size: 34px;
         line-height: 40px;
     }
-    .how-it-work h2{
+    .how-it-works h2{
         font-size: 34px;
         line-height: 40px;
     }
-    .how-it-work-button {
+    .how-it-works-button {
         justify-content: center;
     }
     .pro_file span {
@@ -355,11 +345,11 @@ File Name: responsive.css
     .nav-toggler {
         display: block;
         position: absolute;
-        right: 15px;
+        right: 20px;
         z-index: 99999;
     }
     .site-navbar {
-        min-height: 60px;
+        max-height: 0;
     }
     .site-navbar ul {
         position: absolute;
