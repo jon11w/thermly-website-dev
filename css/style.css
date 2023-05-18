@@ -66,7 +66,6 @@ html {
     src: local("Sofia Pro Soft Medium"), url("../fonts/SofiaProSoftMed-webfont.woff2") format("woff2");
 }
 body {
-    color: #666666;
     font-family: 'Sofia Pro Soft', sans-serif;
     line-height: 1.80857;
     font-weight: normal;
@@ -233,23 +232,6 @@ button {
 
 .block {
     display: block;
-}
-.how-it-works h2 {
-    font-weight: 400;
-    font-size: 56px;
-    line-height: 64px;
-    padding: 0;
-    display: inline-block;
-    letter-spacing: -0.04em;
-    color: #145A6C;
-}
-
-.how-it-works p {
-    padding-top: 6px;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 24px;
-    color: #6C6C6C;
 }
 
 .question-card {
@@ -425,12 +407,19 @@ button {
     text-align: left;
 }
 
-.header-text p {
+.intro-text {
     color: #101010;
     padding: 30px 0 55px 0;
     line-height: 26px;
     font-weight: 400;
 }
+.header-button-row {
+    padding: 0 15px;
+}
+.intro-text-mobile {
+    display: none;
+}
+
 .mar_right {
     margin-right: -90px;
 }
@@ -618,16 +607,10 @@ button {
     height: 413px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-start;
     border-radius: 6px;
-    padding: 32px 46px;
+    padding: 16px 23px;
     margin-top: 66px;
-}
-.how-it-works-box p {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 24px;
 }
 
 .step1{
@@ -660,20 +643,6 @@ button {
 
 .margin-top-30 {
     margin-top: 30px;
-}
-
-.services_box h3 {
-    color: #363636;
-    font-size: 24px;
-    line-height: 25px;
-    font-weight: bold;
-    padding-bottom: 25px;
-}
-
-.services_box p {
-    line-height: 30px;
-    padding-top: 23px;
-    padding-bottom: 30px;
 }
 
 #ho_shad:hover .read_more {

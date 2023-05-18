@@ -4,3 +4,9 @@
 .orange {
     color: var(--orange-color);
 }
+.text-secondary {
+    color: var(--text-secondary);
+}
+.text-white {
+    color: white;
+}

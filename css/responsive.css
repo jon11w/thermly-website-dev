@@ -39,7 +39,7 @@ File Name: responsive.css
     .mar_right {
         margin-right: 0;
     }
-    .header-text p {
+    .intro-text {
         padding: 5px 0 15px 0;
     }
     .header-text .read_more {
@@ -130,8 +130,11 @@ File Name: responsive.css
     .header-text {
         text-align: center;
     }
-    .header-text p {
+    .intro-text {
         display: none;
+    }
+    .intro-text-mobile {
+        display: block;
     }
     .header-img{
         width: auto;
@@ -139,7 +142,7 @@ File Name: responsive.css
     }
     .header-button-row {
         justify-content: center;
-        padding: 10px 0;
+        padding: 10px 15px;
     }
     #banner1 .carousel-control-prev,
     #banner1 .carousel-control-next {
@@ -270,8 +273,11 @@ File Name: responsive.css
     .header-text {
         text-align: center;
     }
-    .header-text p {
+    .intro-text {
         display: none;
+    }
+    .intro-text-mobile {
+        display: block;
     }
     .header-img{
         width: auto;
@@ -279,7 +285,7 @@ File Name: responsive.css
     }
     .header-button-row {
         justify-content: center;
-        padding: 10px 0;
+        padding: 10px 15px;
     }
     .services_box figure {
         width: 100%;
