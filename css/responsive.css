@@ -3,7 +3,7 @@ File Name: responsive.css
 ---------------------------------------------------------------------*/
 
 
-@media (min-width: 1200px)  {
+@media (min-width: 1200px) {
     .logo-image {
         max-width: 200px;
     }
@@ -14,18 +14,23 @@ File Name: responsive.css
     .logo-image {
         max-width: 200px;
     }
+
     .site-navbar ul li {
         padding-right: 30px;
     }
+
     .mar_right {
         margin-right: 0;
     }
+
     .header-text .read_more {
         margin-right: 0;
     }
+
     #banner1 .carousel-control-next {
         right: 39.1%;
     }
+
     #myCarousel .carousel-control-next {
         right: 39.1%;
     }
@@ -36,12 +41,15 @@ File Name: responsive.css
     .site-navbar ul li {
         padding-right: 30px;
     }
+
     .mar_right {
         margin-right: 0;
     }
+
     .intro-text {
         padding: 5px 0 15px 0;
     }
+
     .header-text .read_more {
         margin-right: 0;
     }
@@ -49,28 +57,35 @@ File Name: responsive.css
     #banner1 .carousel-control-next {
         right: 39.1%;
     }
+
     #banner1 .carousel-control-prev {
         left: 40.7%;
     }
+
     #myCarousel .carousel-control-next {
         right: 39.1%;
     }
+
     #myCarousel .carousel-control-prev {
         left: 40.7%;
     }
+
     .question-card {
         height: 72px;
     }
+
     .titlepage h2 {
         font-size: 37px;
         line-height: 45px;
     }
-    .how-it-works h2{
+
+    .how-it-works h2 {
         font-size: 37px;
         line-height: 45px;
     }
+
     .how-it-works-button {
-       justify-content: center;
+        justify-content: center;
     }
 
 }
@@ -82,36 +97,45 @@ File Name: responsive.css
     footer {
         width: calc(100vw - 40px);
     }
-    .nav_button{
+
+    .nav_button {
         display: none;
     }
+
     .footer {
-        margin: 15px;
+        margin: 15px auto;
     }
+
     .about {
         margin: 0 15px;
     }
+
     .full_bg {
         height: 100%;
     }
+
     .grid {
         display: grid;
     }
+
     .order {
         order: -1;
     }
+
     .question-card {
         margin-top: 20px;
     }
+
     .mar_right {
         margin-right: 0px;
     }
+
     .services_box figure {
         width: 100%;
         display: flex;
         align-items: center;
     }
-    
+
 
     .header-area {
         height: 8vh;
@@ -119,77 +143,98 @@ File Name: responsive.css
         margin: 0 30px;
         width: calc(100vw - 70px);
     }
+
     .slider_main {
         height: 90vh;
         margin-bottom: 0 15px 2vh 15px;
     }
+
     .logo-image {
         height: 100%;
         width: auto;
     }
+
     .header-text {
         text-align: center;
     }
+
     .intro-text {
         display: none;
     }
+
     .intro-text-mobile {
         display: block;
     }
-    .header-img{
+
+    .header-img {
         width: auto;
-        height:fit-content;
+        height: fit-content;
     }
+
     .header-button-row {
         justify-content: center;
         padding: 10px 15px;
     }
+
     #banner1 .carousel-control-prev,
     #banner1 .carousel-control-next {
         top: 103%;
     }
+
     #banner1 .carousel-control-next {
         right: 36.7%;
     }
+
     #banner1 .carousel-control-prev {
         left: 36.7%;
     }
+
     #myCarousel .carousel-control-prev,
     #myCarousel .carousel-control-next {
         top: 108%;
     }
+
     #myCarousel .carousel-control-next {
         right: 36.7%;
     }
+
     #myCarousel .carousel-control-prev {
         left: 36.7%;
     }
+
     .titlepage h2 {
         font-size: 34px;
         line-height: 40px;
     }
-    .how-it-works h2{
+
+    .how-it-works h2 {
         font-size: 34px;
         line-height: 40px;
     }
+
     .how-it-works-button {
         justify-content: center;
     }
+
     .pro_file span {
         padding-bottom: 30px;
     }
+
     .d_none {
         display: none !important;
     }
+
     .agency {
         margin-top: 30px;
         display: none;
     }
+
     .latest {
         max-width: 377px;
         margin: 0 auto;
         margin-bottom: 55px;
     }
+
     /* navbar css for mobile start */
     .nav-toggler {
         display: block;
@@ -197,9 +242,11 @@ File Name: responsive.css
         right: 20px;
         z-index: 99999;
     }
+
     .site-navbar {
         max-height: 0;
     }
+
     .site-navbar ul {
         position: absolute;
         width: 75%;
@@ -214,19 +261,27 @@ File Name: responsive.css
         z-index: 99999;
         box-shadow: 0 0 10px rgb(192, 190, 182);
     }
+
     .site-navbar ul li {
         width: 100%;
         text-align: left;
         padding-right: 0;
     }
+
     .site-navbar ul li a {
         padding: 25px 25px 0px 25px;
     }
+
     .site-navbar ul.open {
         max-height: 100vh;
         padding-bottom: 25px;
         overflow: visible;
     }
+
+    .footer-logo {
+        max-width: 125px;
+    }
+
     /* navbar css for mobile end */
 }
 
@@ -234,26 +289,33 @@ File Name: responsive.css
     .full_bg {
         height: 100%;
     }
-    .nav_button{
+
+    .nav_button {
         display: none;
     }
+
     .slider_main {
         padding: 0;
     }
+
     header,
     main,
     footer {
         width: calc(100vw - 40px);
     }
+
     .footer {
-        margin: 10px;
+        margin: 10px auto;
     }
+
     .about {
         margin: 0 10px;
     }
+
     .logo {
         text-align: left;
     }
+
     .question-card {
         margin-top: 20px;
     }
@@ -262,79 +324,101 @@ File Name: responsive.css
         height: 8vh;
         padding: 10px 0;
     }
+
     .slider_main {
         height: 90vh;
         margin-bottom: 2vh;
     }
+
     .logo-image {
         height: 100%;
         width: auto;
     }
+
     .header-text {
         text-align: center;
     }
+
     .intro-text {
         display: none;
     }
+
     .intro-text-mobile {
         display: block;
     }
-    .header-img{
+
+    .header-img {
         width: auto;
-        height:fit-content;
+        height: fit-content;
     }
+
     .header-button-row {
         justify-content: center;
         padding: 10px 15px;
     }
+
     .services_box figure {
         width: 100%;
         display: flex;
         align-items: center;
     }
+
     .mar_right {
         margin-right: 0px;
     }
+
     #banner1 .carousel-control-prev,
     #banner1 .carousel-control-next {
         top: 103%;
     }
+
     #banner1 .carousel-control-next {
         right: 25.7%;
     }
+
     #banner1 .carousel-control-prev {
         left: 25.7%;
     }
+
     #myCarousel .carousel-control-prev,
     #myCarousel .carousel-control-next {
         top: 108%;
     }
+
     #myCarousel .carousel-control-next {
         right: 25.7%;
     }
+
     #myCarousel .carousel-control-prev {
         left: 25.7%;
     }
+
     .titlepage h2 {
         font-size: 34px;
         line-height: 40px;
     }
-    .how-it-works h2{
+
+    .how-it-works h2 {
         font-size: 34px;
         line-height: 40px;
     }
+
     .how-it-works-button {
         justify-content: center;
     }
+
     .pro_file span {
         padding-bottom: 30px;
     }
+
     .grid {
         display: grid;
     }
+
     .order {
         order: -1;
     }
+
     .latest {
         max-width: 317px;
         margin: 0 auto;
@@ -344,19 +428,23 @@ File Name: responsive.css
     .d_none {
         display: none !important;
     }
+
     /* navbar css for mobile start */
     .navbar-area {
         margin-top: -67px;
     }
+
     .nav-toggler {
         display: block;
         position: absolute;
         right: 20px;
         z-index: 99999;
     }
+
     .site-navbar {
         max-height: 0;
     }
+
     .site-navbar ul {
         position: absolute;
         width: 100%;
@@ -371,17 +459,24 @@ File Name: responsive.css
         z-index: 99999;
         box-shadow: 0 0 10px rgb(192, 190, 182);
     }
+
     .site-navbar ul li {
         width: 100%;
         text-align: left;
         padding-right: 0;
     }
+
     .site-navbar ul li a {
         padding: 25px 25px 0px 25px;
     }
+
     .site-navbar ul.open {
         max-height: 100vh;
         padding-bottom: 25px;
         overflow: visible;
+    }
+
+    .footer-logo {
+        max-width: 125px;
     }
 }

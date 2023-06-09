@@ -28,9 +28,9 @@ basic
 ---------------------------------------------------------------------*/
 
 :root {
-    --padding-sm: clamp(1rem,    3%, 1.5rem);
-    --padding-md: clamp(1.5rem,  6%,   3rem);
-    --padding-lg: clamp(3rem,   12%,   6rem);
+    --padding-sm: clamp(1rem, 3%, 1.5rem);
+    --padding-md: clamp(1.5rem, 6%, 3rem);
+    --padding-lg: clamp(3rem, 12%, 6rem);
 }
 
 * {
@@ -41,6 +41,7 @@ basic
     max-width: 1170px;
     height: 100%;
 }
+
 .full_bg {
     height: 100%;
 }
@@ -49,22 +50,27 @@ html {
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
+
 @font-face {
     font-family: "Sofia Pro";
     src: local("Sofia Pro"), url("../fonts/sofiapro-regular-webfont.woff2") format("woff2");
 }
+
 @font-face {
     font-family: "Sofia Pro Soft";
     src: local("Sofia Pro Soft"), url("../fonts/SofiaProSoftReg-webfont.woff2") format("woff2");
 }
+
 @font-face {
     font-family: "Sofia Pro Medium";
     src: local("Sofia Pro Medium"), url("../fonts/sofiapro-medium-webfont.woff2") format("woff2");
 }
+
 @font-face {
     font-family: "Sofia Pro Soft Medium";
     src: local("Sofia Pro Soft Medium"), url("../fonts/SofiaProSoftMed-webfont.woff2") format("woff2");
 }
+
 body {
     font-family: 'Sofia Pro Soft', sans-serif;
     line-height: 1.80857;
@@ -125,7 +131,7 @@ h4 a,
 h5 a,
 h6 a {
     color: #212121;
-    text-decoration: none!important;
+    text-decoration: none !important;
     opacity: 1
 }
 
@@ -173,15 +179,17 @@ hr {
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
+
 img {
     max-width: 90%;
     height: auto;
 }
+
 .img {
     padding: var(--padding-sm);
 }
 
- :focus {
+:focus {
     outline: 0;
 }
 
@@ -248,6 +256,7 @@ button {
     line-height: 20px;
     color: #FFFFFF;
 }
+
 .link {
     text-decoration: underline;
     font-weight: 400;
@@ -334,13 +343,20 @@ button {
 .site-navbar ul li a:hover {
     color: #F26448;
 }
+
 .site-navbar ul li a.active {
     color: #F26448;
 }
 
 .logo-tm {
-    font-size: 8px; 
+    font-size: 8px;
     vertical-align: top;
+}
+
+/* Installer conference */
+.intro-image {
+    padding-bottom: 10px;
+    max-width: 30%;
 }
 
 /* navbar regular css end */
@@ -356,6 +372,7 @@ button {
     display: none;
     z-index: 99999;
 }
+
 .nav-burger {
     height: 50px
 }
@@ -382,7 +399,8 @@ button {
     border-radius: 20px;
     background: #e6f0ef;
 }
-.nav_button{
+
+.nav_button {
     display: inline-block;
     margin-right: 5px;
     background: #F26448;
@@ -413,9 +431,11 @@ button {
     line-height: 26px;
     font-weight: 400;
 }
+
 .header-button-row {
     padding: 0 15px;
 }
+
 .intro-text-mobile {
     display: none;
 }
@@ -482,6 +502,7 @@ button {
         transform: scale(0.6);
         opacity: 1;
     }
+
     100% {
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -604,7 +625,7 @@ button {
 
 /** services section **/
 .how-it-works-box {
-    height: 500px;
+    height: 413px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -613,22 +634,27 @@ button {
     margin-top: 66px;
 }
 
-.step1{
+.step1 {
     background: #C0E1EB;
 }
-.step1 p{
+
+.step1 p {
     color: #145A6C;
 }
-.step2{
+
+.step2 {
     background: #05665F;
 }
-.step2 p{
+
+.step2 p {
     color: #fff;
 }
-.step3{
+
+.step3 {
     background: #FFD27A;
 }
-.step3 p{
+
+.step3 p {
     color: #1C1A17;
 }
 
@@ -825,6 +851,7 @@ button {
 .about .read_more:hover {
     box-shadow: 0 0 16px 3px #635d5d38;
 }
+
 .benefits-para {
     margin-bottom: 10px;
 }
@@ -917,198 +944,34 @@ button {
 
 .footer {
     margin: 60px auto;
-    padding-top: 70px;
-    padding-bottom: 50px;
+    padding: var(--padding-md);
     background: #155a6c;
-    text-align: center;
     border-radius: 20px;
 }
-.footer-content{
-    max-width: 1170px;
-    display: flex;
-    justify-content: flex-start;
-}
-.logo_footer {
-    color: #fff !important;
-    font-size: 30px;
-    padding-bottom: 20px;
-    display: block;
-    line-height: 23px;
-    font-weight: bold;
-    text-align: left;
+
+.footer-logo {
+    min-width: 125px;
+    height: auto;
+    padding-bottom: 40px;
 }
 
-.hedingh3 h3 {
+.footer-nav {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(75px, auto));
+    margin-bottom: 40px;
+    max-width: 385px;
+}
+
+.footer-nav-link {
+    text-decoration: underline;
     color: #fff;
-    font-size: 23px;
-    padding-bottom: 20px;
-    line-height: 23px;
-    font-weight: bold;
-    text-align: left;
 }
 
-.hedingh3 h3::before {
-    position: absolute;
-    content: "";
-    width: 15px;
-    height: 15px;
-    background: #fdc001;
-    top: 5px;
-    border-radius: 20px;
-    left: -20px;
+.footer-disclaimer {
+    color: #BDEADF;
+    text-align: right;
 }
-
-.hedingh3 p {
-    color: #fff;
-    text-align: left;
-    margin-bottom: 15px;
-}
-
-ul.menu_footer {
-    padding-top: 60px;
-    display: flex;
-    justify-content: space-between;
-    text-align: left;
-    margin-bottom: 15px;
-}
-.footer-logo{
-    padding-bottom: 20px;
-}
-ul.menu_footer li a {
-    color: #fff;
-    font-size: 17px;
-    line-height: 18px;
-    padding-right: 50px;
-    padding-bottom: 10px;
-    display: block;
-}
-
-ul.menu_footer li a:hover {
-    color: #fdc001;
-}
-
-.newsl {
-    width: 100%;
-    height: 51px;
-    background: #2d2d2d;
-    color: #c9c7c7;
-    font-size: 17px;
-    font-weight: normal;
-    box-shadow: inherit;
-    padding: 0 15px;
-    border: #fff solid 2px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-}
-
-.subsci_btn {
-    font-size: 16px;
-    transition: ease-in all 0.5s;
-    background-color: #fdc001;
-    text-transform: uppercase;
-    color: #fff;
-    display: block;
-    font-weight: normal;
-    line-height: 51px;
-    height: 51px;
-    max-width: 191px;
-    width: 100%;
-    display: block;
-    border: #fff solid 2px;
-    border-radius: 10px;
-}
-
-.subsci_btn:hover {
-    transition: ease-in all 0.5s;
-    color: #fdc001;
-    background-color: #fff;
-}
-
-#colof *::placeholder {
-    color: #c9c7c7;
-    opacity: 1;
-}
-
-ul.top_infomation {
-    padding-top: 20px;
-}
-
-ul.top_infomation li {
-    padding-bottom: 4px;
-    display: block;
-    font-size: 16px;
-    color: #979793;
-}
-
-ul.top_infomation li i {
-    margin-right: 5px;
-    color: #fdc001;
-    text-align: center;
-}
-
-ul.top_infomation li a {
-    color: #979793;
-}
-
-ul.top_infomation li a:hover {
-    color: #fdc001;
-}
-
-.copyright {
-    margin-top: 90px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background: #fefefd;
-}
-
-.follow h3 {
-    color: #fdc001;
-    font-size: 23px;
-    padding-bottom: 20px;
-    line-height: 23px;
-    font-weight: bold;
-}
-
-ul.social_icon li {
-    display: inline-block;
-    margin: 0 2px;
-}
-
-ul.social_icon li a i {
-    font-size: 17px;
-    color: #fff;
-    transition: ease-in all 0.5s;
-    background: #2d2d2d;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    border-radius: 50px;
-    text-align: center;
-}
-
-ul.social_icon li a i:hover {
-    color: #fff;
-    transition: ease-in all 0.5s;
-    background: #fdc001;
-}
-
-.copyright p {
-    color: #252525;
-    font-size: 17px;
-    line-height: 22px;
-    text-align: center;
-    padding-top: 35px;
-    font-weight: normal;
-}
-
-.copyright a {
-    color: #252525;
-}
-
-.copyright a:hover {
-    color: #fdc001;
-}
-
 
 /** end footer **/
 
@@ -1116,16 +979,19 @@ ul.social_icon li a i:hover {
 /**  inner page css **/
 
 .blog_page .footer {
-     margin-top: 0px;
+    margin-top: 0px;
 }
+
 .inner_page .full_bg {
     height: 100%;
 }
+
 .inner_page .about {
-     margin-top: 90px;
+    margin-top: 90px;
 }
+
 .inner_page .appointment {
-     margin-top: 90px;
+    margin-top: 90px;
 }
 
 .portfolio_page .footer {
