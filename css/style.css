@@ -18,10 +18,7 @@ import Fonts -
 import Files 
 ---------------------------------------------------------------------*/
 
-@import url(normalize.css);
-@import url(icomoon.css);
 @import url(font-awesome.min.css);
-@import url(nice-select.css);
 
 /*--------------------------------------------------------------------- 
 basic 
@@ -33,16 +30,8 @@ basic
     --padding-lg: clamp(3rem, 12%, 6rem);
 }
 
-* {
-    box-sizing: border-box !important;
-}
-
 .container {
     max-width: 1170px;
-    height: 100%;
-}
-
-.full_bg {
     height: 100%;
 }
 
@@ -73,8 +62,6 @@ html {
 
 body {
     font-family: 'Sofia Pro Soft', sans-serif;
-    line-height: 1.80857;
-    font-weight: normal;
     overflow-x: hidden;
 }
 
@@ -99,49 +86,14 @@ a {
     -ms-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
+    color: #222222;
+    text-decoration: none;
+    outline: none !important;
 }
 
 p {
     margin: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    letter-spacing: 0;
-    font-weight: normal;
-    position: relative;
-    padding: 0;
-    font-weight: normal;
-    line-height: normal;
-    color: #111111;
-    margin: 0
-}
-
-*,
-*::after,
-*::before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-h1 a,
-h2 a,
-h3 a,
-h4 a,
-h5 a,
-h6 a {
-    color: #212121;
-    text-decoration: none !important;
-    opacity: 1
-}
-
-button:focus {
-    outline: none;
+    color: #2d2d2d;
 }
 
 ul,
@@ -150,20 +102,6 @@ ol {
     margin: 0px;
     padding: 0px;
     list-style: none;
-}
-
-p {
-    color: #2d2d2d;
-}
-
-a {
-    color: #222222;
-    text-decoration: none;
-    outline: none !important;
-}
-
-hr {
-    margin: 40px 0;
 }
 
 /* Grid */
@@ -190,63 +128,21 @@ hr {
     justify-content: center;
 }
 
+.flex-right {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
 /* General */
-
-.btn {
-    text-decoration: none !important;
-    outline: none !important;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    -ms-transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-}
-
 img {
-    max-width: 90%;
-    height: auto;
-}
-
-.img {
+    max-height: 150px;
+    width: auto;
     padding: var(--padding-sm);
 }
 
 :focus {
     outline: 0;
-}
-
-.btn-custom {
-    margin-top: 20px;
-    background-color: transparent !important;
-    border: 2px solid #ddd;
-    padding: 12px 40px;
-    font-size: 16px;
-}
-
-.lead {
-    font-size: 18px;
-    line-height: 30px;
-    color: #767676;
-    margin: 0;
-    padding: 0;
-}
-
-.form-control:focus {
-    border-color: #ffffff !important;
-    box-shadow: 0 0 0 .2rem rgba(255, 255, 255, .25);
-}
-
-.navbar-form input {
-    border: none !important;
-}
-
-.badge {
-    font-weight: 500;
-}
-
-blockquote {
-    margin: 20px 0 20px;
-    padding: 30px;
 }
 
 button {
@@ -262,29 +158,6 @@ button {
 
 .block {
     display: block;
-}
-
-.question-card {
-    background: #145A6C;
-    height: 68px;
-    border-radius: 12px;
-    padding: 14px 28px;
-}
-
-.question-card p {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    color: #FFFFFF;
-}
-
-.link {
-    text-decoration: underline;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 26px;
-    margin-top: 28px;
 }
 
 .read_more {
@@ -322,11 +195,7 @@ button {
     max-width: 100%;
 }
 
-
-/**-- heading section --**/
-
-
-/*-- header --*/
+/*-- Navbar --*/
 
 .header-area {
     padding: 20px 0;
@@ -379,17 +248,7 @@ button {
     vertical-align: top;
 }
 
-/* Installer conference */
-.intro-image {
-    padding-bottom: 10px;
-    max-width: 30%;
-}
-
-/* navbar regular css end */
-
-
-/* nav-toggler css start */
-
+/* nav-toggler css */
 .nav-toggler {
     padding: 5px;
     background-color: transparent;
@@ -403,21 +262,7 @@ button {
     height: 50px
 }
 
-
-/* nav-toggler css start */
-
-
-/** end header **/
-
-
-/** banner section **/
-
-.full_bg {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
+/** Header **/
 .slider_main {
     padding: var(--padding-md);
     height: max(600px, calc(100vh - 123px));
@@ -427,26 +272,6 @@ button {
     background-image: url("../images/final/thermly_header_frame.svg");
     background-size: auto 100%;
     background-position: center;
-}
-
-.nav_button {
-    display: inline-block;
-    margin-right: 5px;
-    background: #F26448;
-    transition: ease-in all 0.5s;
-    color: #fff;
-}
-
-.relative {
-    position: inherit;
-    left: 0;
-    right: 0;
-    text-align: center;
-    position: inherit;
-}
-
-.header-img {
-    text-align: left;
 }
 
 .intro-text {
@@ -460,19 +285,8 @@ button {
     padding: 0 15px;
 }
 
-.intro-text-mobile {
-    display: none;
-}
-
-.mar_right {
-    margin-right: -90px;
-}
-
-
-
 
 /** What is Thermly **/
-
 .what-container {
     margin: 50px auto;
 }
@@ -487,7 +301,6 @@ button {
 }
 
 /** Why Thermly **/
-
 .why-background {
     border-radius: 20px;
     background-color: var(--mint-color);
@@ -522,7 +335,7 @@ button {
     padding: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     background-color: var(--bg2);
 }
 
@@ -554,7 +367,6 @@ button {
 }
 
 /** footer **/
-
 .footer {
     margin: 60px auto;
     padding: var(--padding-md);
@@ -585,4 +397,8 @@ button {
     text-align: right;
 }
 
-/** end footer **/
+/* Installer conference */
+.intro-image {
+    padding-bottom: 10px;
+    max-width: 30%;
+}
