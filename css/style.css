@@ -104,6 +104,10 @@ ol {
     list-style: none;
 }
 
+.full-height {
+    height: 100%;
+}
+
 /* Grid */
 .grid {
     display: grid;
@@ -246,6 +250,10 @@ button {
 .logo-tm {
     font-size: 8px;
     vertical-align: top;
+}
+
+.logo-image {
+    padding: 0;
 }
 
 /* nav-toggler css */
