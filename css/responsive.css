@@ -7,6 +7,10 @@ File Name: responsive.css
     .logo-image {
         max-width: 200px;
     }
+
+    .why-container {
+        max-width: 40%;
+    }
 }
 
 
