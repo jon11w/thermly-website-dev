@@ -121,6 +121,11 @@ ol {
     gap: 1rem;
 }
 
+.grid-gap-2rem {
+    display: grid;
+    gap: 2rem;
+}
+
 /* Flex */
 .flex {
     display: flex;
@@ -138,11 +143,20 @@ ol {
     justify-content: right;
 }
 
+.flex-card {
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
 /* General */
 img {
     max-height: 150px;
+    max-width: fit-content;
     width: auto;
-    padding: var(--padding-sm);
 }
 
 :focus {
@@ -276,10 +290,11 @@ button {
     height: max(600px, calc(100vh - 123px));
     margin-bottom: 40px;
     border-radius: 20px;
-    background: var(--blue-color);
-    background-image: url("../images/final/thermly_header_frame.svg");
-    background-size: auto 100%;
-    background-position: center;
+    background: url("../images/thermly_header_frame.svg") var(--blue-color) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .intro-text {
@@ -295,26 +310,18 @@ button {
 
 
 /** What is Thermly **/
-.what-container {
-    margin: 50px auto;
-}
-
 .what-box {
     border: 2px solid var(--bg4);
-    border-radius: 20px;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
 }
 
 /** Why Thermly **/
 .why-background {
     border-radius: 20px;
-    background-color: var(--mint-color);
-    background-image: url("../images/final/thermly_house_side.svg");
-    background-size: auto 100%;
-    background-position: right;
+    background: url("../images/thermly_house_side.svg") var(--mint-color) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     padding: 50px 0;
 }
 
@@ -334,16 +341,7 @@ button {
 }
 
 /** How it works **/
-.how-container {
-    margin: 50px auto;
-}
-
 .how-box {
-    border-radius: 20px;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
     background-color: var(--bg2);
 }
 
@@ -355,7 +353,7 @@ button {
 .get-started-background {
     border-radius: 20px;
     background-color: var(--emerald-color);
-    background-image: url("../images/final/thermly_house_side.svg");
+    background-image: url("../images/thermly_house_side.svg");
     background-size: auto 100%;
     background-position: right;
     padding: 50px 0;
@@ -363,15 +361,10 @@ button {
 
 .get-started-box {
     border: 2px solid var(--bg5);
-    border-radius: 20px;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
 }
 
 .get-started-img {
-    max-width: 30%;
+    max-height: 100px;
 }
 
 /** footer **/
@@ -380,12 +373,17 @@ button {
     padding: var(--padding-md);
     background: white;
     border-radius: 20px;
+    border: 2px solid var(--bg4);
 }
 
 .footer-logo {
-    min-width: 125px;
+    max-width: 150px;
     height: auto;
     padding-bottom: 40px;
+}
+
+.footer-container {
+
 }
 
 .footer-nav {

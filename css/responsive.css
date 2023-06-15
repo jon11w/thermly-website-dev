@@ -106,10 +106,6 @@ File Name: responsive.css
         display: none;
     }
 
-    .footer {
-        margin: 15px auto;
-    }
-
     .about {
         margin: 0 15px;
     }
@@ -306,10 +302,6 @@ File Name: responsive.css
     main,
     footer {
         width: calc(100vw - 40px);
-    }
-
-    .footer {
-        margin: 10px auto;
     }
 
     .about {
