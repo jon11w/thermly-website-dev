@@ -13,6 +13,30 @@ File Name: responsive.css
     }
 }
 
+@media (max-width: 1199px) {
+    .why-title {
+        max-width: 50%;
+        padding-bottom: 1rem;
+    }
+
+    .why-background {
+        background-position: 
+            top 30px right 0,
+            bottom 20px center;
+        background-image: 
+            url("../images/thermly_dog.svg"),
+            url("../images/thermly_house_side.svg");
+        background-color:  var(--mint-color);
+        background-repeat: no-repeat;
+        background-size:
+            90px,
+            100% auto;
+    }
+
+    .why-container {
+        margin-bottom: 250px;
+    }
+}
 
 @media (min-width: 992px) and (max-width: 1199px) {
     .logo-image {
@@ -37,6 +61,20 @@ File Name: responsive.css
 
     #myCarousel .carousel-control-next {
         right: 39.1%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+    .grid {
+        display: inline-block
+    }
+
+    .footer .grid {
+        display: grid;
+    }
+
+    .flex-card {
+        margin-bottom: 1rem;
     }
 }
 
@@ -114,10 +152,6 @@ File Name: responsive.css
         height: 100%;
     }
 
-    .grid {
-        display: grid;
-    }
-
     .order {
         order: -1;
     }
@@ -136,7 +170,6 @@ File Name: responsive.css
         align-items: center;
     }
 
-
     .header-area {
         height: 8vh;
         padding: 10px 0;
@@ -147,6 +180,10 @@ File Name: responsive.css
     .slider_main {
         height: 90vh;
         margin-bottom: 0 15px 2vh 15px;
+    }
+
+    .why-container {
+        margin-bottom: 150px;
     }
 
     .logo-image {
@@ -296,6 +333,33 @@ File Name: responsive.css
 
     .slider_main {
         padding: 0;
+        height: 90vh;
+        margin-bottom: 2vh;
+        background-position: 
+            bottom center,
+            top right;
+        background-image: 
+            url("../images/thermly_plan.svg"),
+            url("../images/thermly_picture_frame.svg");
+        background-color:  var(--blue-color);
+        background-repeat: no-repeat;
+        background-size: 
+            350px,
+            200px;
+    }
+
+    .why-background {
+        background-position: 
+            top 30px right 0,
+            bottom 20px center;
+        background-image: 
+            url("../images/thermly_dog.svg"),
+            url("../images/thermly_house_side_mobile.svg");
+        background-color:  var(--mint-color);
+        background-repeat: no-repeat;
+        background-size:
+            90px,
+            100% auto;
     }
 
     header,
@@ -319,11 +383,6 @@ File Name: responsive.css
     .header-area {
         height: 8vh;
         padding: 10px 0;
-    }
-
-    .slider_main {
-        height: 90vh;
-        margin-bottom: 2vh;
     }
 
     .logo-image {
