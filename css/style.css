@@ -292,6 +292,10 @@ button {
     height: max(600px, calc(100vh - 123px));
     margin-bottom: 40px;
     border-radius: 20px;
+    background-color: var(--blue-color);
+}
+
+.slider_main_background {
     background: url("../images/thermly_header_frame.svg") var(--blue-color) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;

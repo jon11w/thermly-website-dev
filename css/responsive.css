@@ -64,7 +64,7 @@ File Name: responsive.css
     }
 }
 
-@media (min-width: 576px) and (max-width: 991px) {
+@media (min-width: 484px) and (max-width: 991px) {
     .grid {
         display: inline-block
     }
@@ -464,10 +464,6 @@ File Name: responsive.css
 
     .pro_file span {
         padding-bottom: 30px;
-    }
-
-    .grid {
-        display: grid;
     }
 
     .order {

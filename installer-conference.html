@@ -41,24 +41,11 @@
     <header class="header-area">
         <div class="row full-height">
             <div class="col-md-3 col-sm3 full-height">
-                <div class="logo full-height">
+                <div class="logo full-height flex">
                     <img class="logo-image" src="icon/ThermlyLogotypeOrange.svg" />
                     <span class="logo-tm">TM</span>
                 </div>
             </div>
-            <nav class="col-md-9 col-sm-9 site-navbar">
-                <ul>
-                    <li><a class="active" href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="blog.html">Installers</a></li>
-                    <li><a href="contact.html">Sign in</a></li>
-
-                </ul>
-                <a class="read_more nav_button" href="https://thermly-fe.vercel.app/heatpump-readiness">Get started</a>
-            </nav>
-            <button class="nav-toggler">
-                <i class="nav-burger fa fa-bars"></i>
-            </button>
         </div>
     </header>
 
@@ -104,7 +91,7 @@
         <!-- end header -->
 
         <!-- questionnaire -->
-        <article id="questionnaire" class="container">
+        <article id="questionnaire" class="container grid-gap-2rem">
             <div class="row">
                 <div class="services_box margin-top-30 text_align_center intro-text-mobile">
                     <p class="text-standard">
@@ -122,44 +109,47 @@
                         installers in the UK.
                     </p>
                 </div>
+            </div>  
+            <div class="row flex-center margin-top-30">
+                <a class="read_more" href="https://forms.office.com/e/8fehsMHgE9">Complete the survey</a>
             </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="services_box margin-top-30 text_align_center">
+            <div class="grid how-container">
+                <div class="flex-card how-box">
+                    <div class="img flex-center">
+                        <img src="images/thermly_cat_and_heater.svg" alt="#" />
+                    </div>
+                    <div>
                         <div class="title-large emerald">Qualified leads</div>
-                        <div class="img flex-center">
-                            <img src="images/energy.jpg" alt="#" />
-                        </div>
-                        <p class="text-standard">
+                        <div class="text-standard">
                             Our residents will go through a detailed data capture process to assess the suitability of
                             their property for a heat pump installation. They'll also be given pricing estimates, so
                             that you know that they're serious.
-                        </p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="services_box margin-top-30 text_align_center">
+                <div class="flex-card how-box">
+                    <div class="img flex-center">
+                        <img src="images/thermly_ipad.svg" alt="#" />
+                    </div>
+                    <div>
                         <div class="title-large emerald">Reduced admin</div>
-                        <div class="img flex-center">
-                            <img src="images/heating.png" alt="#" />
-                        </div>
-                        <p class="text-standard">
+                        <div class="text-standard">
                             Thermly will take care of the boring stuff for you - we'll automate the paperwork,
                             simplifying the bookings and give you reminders when you need to take action on an order.
-                        </p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="services_box margin-top-30 text_align_center">
+                <div class="flex-card how-box">
+                    <div class="img flex-center">
+                        <img src="images/thermly_heatpump.svg" alt="#" />
+                    </div>
+                    <div>
                         <div class="title-large emerald">More installations</div>
-                        <div class="img flex-center">
-                            <img src="images/green.png" alt="#" />
-                        </div>
-                        <p class="text-standard">
+                        <div class="text-standard">
                             We'll be putting you front and center infront of everyonelooking for a heat pump
                             installation in your area. No more Facebook posts or newspaper ads - we'll bring the
                             instllations to you.
-                        </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -167,19 +157,19 @@
                 <a class="read_more" href="https://forms.office.com/e/8fehsMHgE9">Complete the survey</a>
             </div>
         </article>
-        <!-- end services -->
-        <hr />
     </main>
 
     <footer class="footer">
-        <img class="footer-logo" src="icon/ThermlyLogotypeWhite.svg" width="200px" />
-        <ul class="footer-nav">
-            <li class="text-small"><a class="footer-nav-link" href="index.html">Home</a></li>
-            <li class="text-small"><a class="footer-nav-link" href="about.html">About</a></li>
-            <li class="text-small"><a class="footer-nav-link" href="service.html">Installers</a></li>
-            <li class="text-small"><a class="footer-nav-link" href="blog.html">Sign in</a></li>
-        </ul>
-        <p class="footer-disclaimer text-small"> @ All rights reserved. Thermly 2023</p>
+        <img class="footer-logo" src="icon/ThermlyLogotypeOrange.svg" width="200px" />
+        <div class="grid">
+            <ul class="footer-nav">
+                <li class="text-small"><a class="footer-nav-link" href="index.html">Home</a></li>
+                <li class="text-small"><a class="footer-nav-link" href="about.html">About</a></li>
+                <li class="text-small"><a class="footer-nav-link" href="service.html">Installers</a></li>
+                <li class="text-small"><a class="footer-nav-link" href="blog.html">Sign in</a></li>
+            </ul>
+            <p class="footer-disclaimer text-small"> @ All rights reserved. Thermly 2023</p>
+        </div>
     </footer>
 
     <!-- Javascript files-->
