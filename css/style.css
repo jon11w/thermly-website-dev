@@ -2,17 +2,24 @@
 File Name: style.css 
 ---------------------------------------------------------------------*/
 
-
 /*--------------------------------------------------------------------- 
-import Fonts -
---------------------------------------------------------------------*/
-
-
-
-/*****---------------------------------------- 1) 
- 2) font-family: 'Poppins', sans-serif;
- ----------------------------------------*****/
-
+CSS resets
+---------------------------------------------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+article {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
 
 /*--------------------------------------------------------------------- 
 import Files 
@@ -28,11 +35,6 @@ basic
     --padding-sm: clamp(1rem, 3%, 1.5rem);
     --padding-md: clamp(1.5rem, 6%, 3rem);
     --padding-lg: clamp(3rem, 12%, 6rem);
-}
-
-.container {
-    max-width: 1170px;
-    height: 100%;
 }
 
 html {
@@ -67,6 +69,7 @@ html {
 body {
     font-family: 'Sofia Pro Soft', sans-serif;
     overflow-x: hidden;
+    margin: 0;
 }
 
 header,
@@ -75,11 +78,6 @@ footer {
     max-width: 1400px;
     margin: 0 auto;
     width: calc(100vw - 80px);
-}
-
-article {
-    margin-top: 80px;
-    margin-bottom: 40px;
 }
 
 a {
@@ -93,6 +91,16 @@ a {
     color: #222222;
     text-decoration: none;
     outline: none !important;
+}
+
+.article {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.read_more:hover {
+    text-decoration: none !important;
+    color: white !important;
 }
 
 p {
@@ -112,10 +120,23 @@ ol {
     height: 100%;
 }
 
+.full-width {
+    width: 100%;
+}
+
+/* Colours */
+.orange {
+    color: var(--orange-color);
+}
+
+.emerald {
+    color: var(--emerald-color);
+}
+
 /* Grid */
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
 }
 
@@ -125,14 +146,45 @@ ol {
     gap: 1rem;
 }
 
+.grid-gap-1rem {
+    display: grid;
+    gap: 1rem;
+}
+
 .grid-gap-2rem {
     display: grid;
     gap: 2rem;
 }
 
+.grid-gap-3rem {
+    display: grid;
+    gap: 3rem;
+}
+
+.grid-equal-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.grid-split-2 {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 1rem;
+}
+
+.grid-justify-items-center {
+    justify-items: center;
+}
+
 /* Flex */
 .flex {
     display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
 }
 
 .flex-center {
@@ -148,12 +200,79 @@ ol {
 }
 
 .flex-card {
-    border-radius: 20px;
+    border-radius: 24px;
     padding: 30px;
     display: flex;
     gap: 1.5rem;
     flex-direction: column;
     justify-content: flex-start;
+}
+
+.flex-space-between {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+/* General */
+.justify-center {
+    justify-content: center;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.justify-start {
+    justify-content: flex-start;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.justify-space-around {
+    justify-content: space-around;
+}
+
+.align-center {
+    align-content: center;
+}
+
+.align-item-center {
+    align-items: center;
+}
+
+.align-item-end {
+    align-items: end;
+}
+
+.align-self {
+    align-self: center;
+}
+
+.align-self-end {
+    align-self: end;
+}
+
+.gap-1 {
+    gap: 1rem;
+}
+
+.gap-2 {
+    gap: 2rem;
+}
+
+.gap-3 {
+    gap: 3rem;
+}
+
+.gap-4 {
+    gap: 4rem;
+}
+
+.gap-5 {
+    gap: 5rem;
 }
 
 /* General */
@@ -183,20 +302,13 @@ button {
 }
 
 .read_more {
-    transition: ease-in all 0.3s;
     background: #F26448;
     color: #fff;
-    display: inline-block;
-    padding: 8px 20px;
-    gap: 8px;
+    padding: 14px 24px;
     text-align: center;
     border-radius: 30px;
-    font-weight: bold;
-}
-
-.read_more:hover {
-    background: #fdc001;
-    color: #fff;
+    display: flex;
+    gap: 0.75rem;
 }
 
 .text_align_left {
@@ -215,16 +327,61 @@ button {
     max-width: 100%;
 }
 
+.container {
+    max-width: 1170px;
+    height: 100%;
+    width: calc(100% - 30px);
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container-narrow {
+    max-width: 680px;
+}
+
+@media (min-width: 576px) {
+    .container-wide {
+        width: calc(100vw - 80px);
+    }
+
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
 /*-- Navbar --*/
 
 .header-area {
-    padding: 20px 0;
-    max-width: 1170px;
+    padding: 30px 0;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    align-content: center;
+    flex-wrap: wrap;
 }
 
 .site-navbar {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     gap: 30px;
 }
@@ -236,11 +393,13 @@ button {
     display: flex;
 }
 
-.site-navbar ul li a {
-    color: #363636;
-    font-size: 17px;
+.nav-link {
     display: block;
     text-decoration: none;
+}
+
+.mobile {
+    display: none;
 }
 
 .site-navbar ul li {
@@ -251,56 +410,104 @@ button {
     padding-right: 0;
 }
 
-.site-navbar ul li a:hover {
-    color: #F26448;
-}
-
-.site-navbar ul li a.active {
+.nav-link.active,
+.nav-link:hover {
     color: #F26448;
 }
 
 .logo {
-    max-width: 150px;
+    width: 150px;
 }
 
 .logo-tm {
     font-size: 8px;
     vertical-align: top;
+    font-family: 'Sofia Pro Soft';
 }
 
 .logo-image {
     padding: 0;
 }
 
-/* nav-toggler css */
-.nav-toggler {
-    padding: 5px;
-    background-color: transparent;
-    cursor: pointer;
-    height: 39px;
-    display: none;
-    z-index: 99999;
+.nav-get-started {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: flex-end;
 }
 
-.nav-burger {
-    height: 50px
+/* nav-toggler css */
+.nav-toggler {
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+    z-index: 99999;
+    font-size: 20px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 99999;
 }
 
 /** Header **/
 .slider_main {
-    padding: var(--padding-md);
-    height: max(600px, calc(100vh - 123px));
-    margin-bottom: 40px;
-    border-radius: 20px;
-    background-color: var(--blue-color);
+    height: max(600px, calc(100vh - 163px));
+    margin-bottom: 60px;
+    border-radius: 24px;
 }
 
 .slider_main_background {
-    background: url("../images/thermly_header_frame.svg") var(--blue-color) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background-position:
+        90% 100%,
+        95% 0%,
+        0% 30%;
+    background-image:
+        url("../images/thermly_dog.svg"),
+        url("../images/thermly_picture_frame.svg"),
+        url("../images/thermly_window.svg");
+    background-color: var(--light-blue-color);
+    background-repeat: no-repeat;
+    background-size:
+        250px,
+        250px,
+        150px;
+    transition: 0.3s;
+}
+
+.slider_community_background {
+    background-position:
+        90% 100%,
+        95% 0%,
+        0% 30%;
+    background-image:
+        url("../images/thermly_dog.svg"),
+        url("../images/thermly_picture_frame.svg"),
+        url("../images/thermly_window.svg");
+    background-color: var(--light-green-color);
+    background-repeat: no-repeat;
+    background-size:
+        250px,
+        250px,
+        150px;
+    transition: 0.3s;
+}
+
+.slider_main:hover {
+    background-color: var(--blue-color);
+}
+
+.slider_community_background:hover {
+    background-color: var(--light-green-color);
+}
+
+.slider-content {
+    gap: 3rem;
+    flex-direction: column;
+    max-width: 80%;
+}
+
+.circle-right-light {
+    margin-left: 5px;
 }
 
 .intro-text {
@@ -314,6 +521,9 @@ button {
     padding: 0 15px;
 }
 
+.header-learn-more {
+    flex-direction: column;
+}
 
 /** What is Thermly **/
 .what-box {
@@ -322,13 +532,18 @@ button {
 
 /** Why Thermly **/
 .why-background {
-    border-radius: 20px;
-    background: url("../images/thermly_house_side.svg") var(--mint-color) no-repeat center center;
+    border-radius: 24px;
+    background: url("../images/thermly_house_side.svg") var(--light-mint-color) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     padding: 50px 0;
+    transition: 0.3s;
+}
+
+.why-background:hover {
+    background-color: var(--mint-color);
 }
 
 .why-container {
@@ -338,7 +553,7 @@ button {
 }
 
 .why-box {
-    border-radius: 20px;
+    border-radius: 24px;
     background-color: white;
     padding: 30px;
     display: flex;
@@ -351,13 +566,17 @@ button {
     background-color: var(--bg2);
 }
 
+.logo-box {
+    justify-content: center;
+}
+
 .how-step {
     color: rgba(20, 90, 108, 0.5)
 }
 
 /** Getting started **/
 .get-started-background {
-    border-radius: 20px;
+    border-radius: 24px;
     background-color: var(--emerald-color);
     background-image: url("../images/thermly_house_side.svg");
     background-size: auto 100%;
@@ -373,13 +592,18 @@ button {
     max-height: 100px;
 }
 
+.thermly-logo {
+    max-height: 400px;
+    max-width: 100%;
+}
+
 /** footer **/
 .footer {
-    margin: 60px auto;
     padding: var(--padding-md);
     background: white;
-    border-radius: 20px;
+    border-radius: 24px;
     border: 2px solid var(--bg4);
+    margin-bottom: 20px;
 }
 
 .footer-logo {
@@ -409,4 +633,274 @@ button {
 .intro-image {
     padding-bottom: 10px;
     max-width: 30%;
+}
+
+/* About us */
+
+.about-us-intro-text {
+    padding-top: 30px;
+}
+
+.values-background {
+    border-radius: 24px;
+    background-color: var(--bg2);
+    padding: 50px 0;
+}
+
+/* Contact us */
+.contact-us-header {
+    padding: var(--padding-md);
+    margin-bottom: 40px;
+    border-radius: 24px;
+    background-color: var(--earth-color);
+    background-size: 300px;
+}
+
+@media (min-width: 991px) {
+    .contact-us-header {
+        height: max(600px, calc(100vh - 123px));
+    }
+}
+
+/* Heat pumps */
+.video-placeholder {
+    max-width: 100%;
+}
+
+.video-placeholder:hover {
+    cursor: pointer;
+}
+
+/* Video modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    border: 1px solid #888;
+    display: inline-block
+}
+
+.close {
+    color: var(--orange-color);
+    font-size: 60px;
+    position: fixed;
+    top: 0;
+    right: 20px;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* FAQ */
+.faq-container {
+    border-radius: 24px;
+    background-color: var(--emerald-color);
+    padding: 50px 0;
+}
+
+.faq-column {
+    gap: 2rem;
+}
+
+.faq-menu {
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.faq-menu-link {
+    color: var(--bg5);
+    cursor: pointer;
+}
+
+.faq-menu-link:hover {
+    color: var(--mint-color);
+}
+
+.faq-menu-link.active {
+    color: var(--yellow-color);
+}
+
+.faq-accordion-button {
+    background-color: var(--emerald-color);
+    cursor: pointer;
+    padding: 20px 0 30px 0;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    transition: 0.5s;
+}
+
+.faq-accordion-button.active {
+    color: var(--yellow-color);
+}
+
+.faq-accordion-button:hover {
+    color: var(--mint-color);
+}
+
+.faq-accordion-panel {
+    max-height: 0;
+    border-bottom: 1px solid var(--bg5);
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    margin-bottom: 10px;
+}
+
+.faq-accordion-arrow {
+    transition: 0.5s;
+}
+
+.faq-accordion-arrow-rotated {
+    transition: 0.5s;
+    transform: rotate(180deg);
+}
+
+/* Headers */
+.page-header {
+    border-radius: 24px;
+    padding: 75px 0;
+}
+
+.about-us-header {
+    background-position:
+        100% 90%;
+    background-image:
+        url("../images/thermly_shelf.svg");
+    background-color: var(--mint-color);
+    background-repeat: no-repeat;
+    background-size:
+        200px;
+}
+
+.heat-pumps-header {
+    background-position:
+        90% 100%;
+    background-image:
+        url("../images/thermly_dog.svg");
+    background-color: var(--yellow-color);
+    background-repeat: no-repeat;
+    background-size:
+        200px;
+}
+
+.installers-header {
+    background-position:
+        100% 90%;
+    background-image:
+        url("../images/thermly_heatpump.svg");
+    background-color: var(--blue-color);
+    background-repeat: no-repeat;
+    background-size:
+        200px;
+}
+
+.how-it-works-header {
+    background-position:
+        95% 50%;
+    background-image:
+        url("../images/emerald_signpost.svg");
+    background-color: var(--blue-color);
+    background-repeat: no-repeat;
+    background-size:
+        175px;
+}
+
+/* Dividers */
+.divider {
+    margin: 64px 0;
+}
+
+.divider-house {
+    width: 100%;
+    max-height: 200px;
+}
+
+.divider-line {
+    height: 2px;
+    width: auto;
+}
+
+.divider-bush,
+.divider-signpost {
+    width: 100%;
+}
+
+/* Community */
+.map-image {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.quote {
+    margin: 0 -100vw;
+    padding: 50px 0;
+    background-color: var(--yellow-color);
+}
+
+.quote-circle {
+    height: 32px;
+    width: 32px;
+    background-color: var(--emerald-color);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.promo-background {
+    border-radius: 24px;
+    background-color: var(--emerald-color);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 50px 0;
+    transition: 0.3s;
+}
+
+/* How it works */
+.how-it-works-step {
+    padding: 8px 24px;
+    border-radius: 8px;
+    width: max-content;
+}
+
+.how-it-works-circle {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+}
+
+.how-it-works-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.how-it-works-rule {
+    border-right: 4px solid var(--bg3);
+    margin: -1.5rem 0;
+    padding: 1.5rem 2rem;
+    padding-left: 0;
+}
+
+.feedback-bar {
+    border-radius: 8px;
+    padding: 8px 24px;
+    background-color: var(--bg2);
 }

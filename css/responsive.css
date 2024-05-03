@@ -11,6 +11,7 @@ File Name: responsive.css
     .why-container {
         max-width: 40%;
     }
+    
 }
 
 @media (max-width: 1199px) {
@@ -21,15 +22,12 @@ File Name: responsive.css
 
     .why-background {
         background-position: 
-            top 30px right 0,
             bottom 20px center;
         background-image: 
-            url("../images/thermly_dog.svg"),
             url("../images/thermly_house_side.svg");
-        background-color:  var(--mint-color);
+        background-color:  var(--light-mint-color);
         background-repeat: no-repeat;
         background-size:
-            90px,
             100% auto;
     }
 
@@ -75,6 +73,41 @@ File Name: responsive.css
 
     .flex-card {
         margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .grid-equal-2,
+    .grid-split-2,
+    .grid-article-container {
+        display: inline-block !important;
+    }
+
+    .grid-equal-2 > div:nth-child(2),
+    .grid-split-2 > div:nth-child(2),
+    .grid-article-container > div:nth-child(2),
+    .how-it-works-grid > div:nth-child(2) {
+        margin-top: 2rem;
+    }
+
+    .how-it-works-grid {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .how-it-works-rule {
+        border-right: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .article-side-content {
+        width: 100%;
+        height: auto;
+    }
+
+    .article-image {
+        width: 100%;
     }
 }
 
@@ -132,12 +165,21 @@ File Name: responsive.css
 
 }
 
+@media (max-width: 991px) {
+    .about-us-header {
+        height: auto;
+    }
+}
+
 @media (min-width: 576px) and (max-width: 767px) {
 
     header,
-    main,
-    footer {
+    main {
         width: calc(100vw - 40px);
+    }
+
+    footer {
+        width: calc(100vw - 88px);
     }
 
     .nav_button {
@@ -173,8 +215,8 @@ File Name: responsive.css
     .header-area {
         height: 8vh;
         padding: 10px 0;
-        margin: 0 30px;
-        width: calc(100vw - 70px);
+        /* margin: 0 30px;
+        width: calc(100vw - 70px); */
     }
 
     .slider_main {
@@ -275,9 +317,6 @@ File Name: responsive.css
     /* navbar css for mobile start */
     .nav-toggler {
         display: block;
-        position: absolute;
-        right: 20px;
-        z-index: 99999;
     }
 
     .site-navbar {
@@ -319,10 +358,22 @@ File Name: responsive.css
         max-width: 125px;
     }
 
+    .quote {
+        margin: 0 -20px;
+    }
+
     /* navbar css for mobile end */
 }
 
 @media (max-width: 575px) {
+    .mobile {
+        display: inline-block;
+    }
+
+    .non-mobile {
+        display: none;
+    }
+
     .full_bg {
         height: 100%;
     }
@@ -333,39 +384,42 @@ File Name: responsive.css
 
     .slider_main {
         padding: 0;
-        height: 90vh;
+        height: 88vh;
         margin-bottom: 2vh;
-        background-position: 
-            bottom center,
-            top right;
-        background-image: 
-            url("../images/thermly_plan.svg"),
-            url("../images/thermly_picture_frame.svg");
+        background-image: url("");
         background-color:  var(--blue-color);
         background-repeat: no-repeat;
-        background-size: 
-            350px,
-            200px;
+    }
+
+    .slider_community_background {
+        background-color: var(--light-green-color);
+    }
+
+    .about-us-header,
+    .heat-pumps-header,
+    .installers-header,
+    .how-it-works-header {
+        background-image: url("");
     }
 
     .why-background {
         background-position: 
-            top 30px right 0,
             bottom 20px center;
         background-image: 
-            url("../images/thermly_dog.svg"),
             url("../images/thermly_house_side_mobile.svg");
-        background-color:  var(--mint-color);
+        background-color:  var(--light-mint-color);
         background-repeat: no-repeat;
         background-size:
-            90px,
             100% auto;
     }
 
     header,
-    main,
-    footer {
+    main {
         width: calc(100vw - 40px);
+    }
+
+    footer {
+        width: calc(100vw - 88px);
     }
 
     .about {
@@ -487,9 +541,6 @@ File Name: responsive.css
 
     .nav-toggler {
         display: block;
-        position: absolute;
-        right: 20px;
-        z-index: 99999;
     }
 
     .site-navbar {
@@ -529,5 +580,14 @@ File Name: responsive.css
 
     .footer-logo {
         max-width: 125px;
+    }
+
+    .quote {
+        margin: 0 -20px;
+    }
+
+    .map-image-container {
+        margin-left: -20px;
+        margin-right: -20px;
     }
 }

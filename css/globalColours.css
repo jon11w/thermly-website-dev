@@ -1,12 +1,42 @@
 .emerald {
     color: var(--emerald-color);
 }
+.emerald-background {
+    background-color: var(--emerald-color);
+}
 .orange {
     color: var(--orange-color);
+}
+.orange-background {
+    background-color: var(--orange-color);
 }
 .text-secondary {
     color: var(--text-secondary);
 }
 .text-white {
     color: white;
+}
+.leaf {
+    color: var(--leaf-color)
+}
+.blue-grey {
+    color: var(--blue-grey-color);
+}
+.blue-background {
+    background-color: var(--blue-color);
+}
+.green-background {
+    background-color: var(--green-color);
+}
+.mint-background {
+    background-color: var(--mint-color);
+}
+.yellow-background {
+    background-color: var(--yellow-color);
+}
+.earth-background {
+    background-color: var(--earth-color);
+}
+.bg2-background {
+    background-color: var(--bg2);
 }
