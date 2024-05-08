@@ -12,15 +12,15 @@ class Imports extends HTMLElement {
         <link rel="preload" href="/fonts/SofiaProSoftReg-webfont.woff2" as="font" crossorigin="anonymous">
 
         <!-- style css -->
-        <link rel="stylesheet" href="/css/style.css?version=105">
-        <link rel="stylesheet" href="/css/articles.css?version=105">
-        <link rel="stylesheet" href="/css/responsive.css?version=105">
-        <link rel="stylesheet" href="/css/style.variables.css?version=105">
-        <link rel="stylesheet" href="/css/globalFonts.css?version=105">
-        <link rel="stylesheet" href="/css/globalColours.css?version=105">
+        <link rel="stylesheet" href="/css/style.css?version=106">
+        <link rel="stylesheet" href="/css/articles.css?version=106">
+        <link rel="stylesheet" href="/css/responsive.css?version=106">
+        <link rel="stylesheet" href="/css/style.variables.css?version=106">
+        <link rel="stylesheet" href="/css/globalFonts.css?version=106">
+        <link rel="stylesheet" href="/css/globalColours.css?version=106">
 
         <!-- Responsive-->
-        <link rel="stylesheet" href="/css/responsive.css?version=105">
+        <link rel="stylesheet" href="/css/responsive.css?version=106">
 
         <!-- Tweaks for older IEs-->
         <!-- Load an icon library to show a hamburger menu (bars) on small screens -->

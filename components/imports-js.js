@@ -11,7 +11,7 @@ class ImportsJs extends HTMLElement {
         <script src="/js/jquery-3.0.0.min.js"></script>
         <script src="/js/owl.carousel.min.js"></script>
         <script src="/js/bootstrap-datepicker.min.js"></script>
-        <script src="/js/custom.js?version=105"></script>
+        <script src="/js/custom.js?version=106"></script>
         `
     }
 };
