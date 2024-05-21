@@ -8,8 +8,11 @@ class ArticleSummary extends HTMLElement {
         <div class="flex-column gap-1">
             <div class="article-summary-image-container">
             ${this.getAttribute('image')
-                ? `<img class="article-summary-image" src="${this.getAttribute('image')}" alt="Nonspecific article doodle" />`
-                : ""
+                ? `
+                    <a class="heading-medium emerald article-summary-title" href="${this.getAttribute('link')}">
+                        <img class="article-summary-image" src="${this.getAttribute('image')}" alt="Nonspecific article doodle" />
+                    </a>
+                ` : ""
             }           
             </div>
             <a class="heading-medium emerald article-summary-title" href="${this.getAttribute('link')}">${this.getAttribute('heading')}</a>
